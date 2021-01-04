@@ -17,4 +17,4 @@ diverged somewhat.  Occasionally, contributions will be passed back and forth
 and the commit message history may not reflect the original authorship.
 
 These two repositories have been developed in collaboration, and authorship is
-shared between Jill Naiman and Matthew Turk.
+shared between Jill Naiman and  Matthew Turk.
