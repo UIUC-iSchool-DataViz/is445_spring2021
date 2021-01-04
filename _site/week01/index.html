@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>IS445 - Data Viz - AOG/AOU - Introduction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="/is445_spring2021/assets/style.css" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Introduction | IS445 - Data Viz - AOG/AOU</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Introduction" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is the course website for IS445-AOG-AOU in Spring 2021" />
+<meta property="og:description" content="This is the course website for IS445-AOG-AOU in Spring 2021" />
+<link rel="canonical" href="http://localhost:4000/is445_spring2021/week01/" />
+<meta property="og:url" content="http://localhost:4000/is445_spring2021/week01/" />
+<meta property="og:site_name" content="IS445 - Data Viz - AOG/AOU" />
+<script type="application/ld+json">
+{"description":"This is the course website for IS445-AOG-AOU in Spring 2021","headline":"Introduction","@type":"WebPage","url":"http://localhost:4000/is445_spring2021/week01/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+    <body>
+<header>
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/is445_spring2021/" title="home" class="navbar-item">
+                    <span class="icon is-large">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    IS445
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    
+                    
+                    <a href="/is445_spring2021/syllabus" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fas fa-book"></i>
+                        </span>
+                        Syllabus
+                    </a>
+                    
+                    <a href="https://is445-fall2020.slack.com/" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fab fa-slack"></i>
+                        </span>
+                        Slack
+                    </a>
+                    
+                    <a href="https://jupyterhub.ischool.illinois.edu/" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fab fa-python"></i>
+                        </span>
+                        JupyterHub
+                    </a>
+                    
+                    <a href="https://learn.illinois.edu/course/view.php?id=50825" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fas fa-school"></i>
+                        </span>
+                        Moodle
+                    </a>
+                    
+                </div>
+                <div class="navbar-end">
+                    <a href="https://github.com/pages/UIUC-iSchool-DataViz/is445_spring2021" class="navbar-item">
+                        <span class="icon is-large">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+</header>
+
+        <main>
+            <div class="container">
+                <div class="section">
+                    <div class="content">
+                        
+                        <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <h1 id="introduction">Introduction</h1>
+
+<p>This week, we went over the structure of the course, as well as some basics of
+why we visualize, who we visualize for, and how to think about our relationship
+with our data.</p>
+
+<ul>
+  <li><a href="http://www-personal.umich.edu/~mejn/election/2008/">Mark Newman’s Election Maps</a></li>
+  <li><a href="https://www.netflix.com/title/60022989">Lilo &amp; Stitch</a></li>
+  <li><a href="http://www.pbs.org/parents/peg/episode-119-the-big-dog-problem-the-three-friends-problem/">Peg + Cat: The Three Friends Problem</a></li>
+  <li><a href="https://fred.stlouisfed.org">FRED</a></li>
+  <li><a href="https://vega.github.io/editor/#/gist/vega-lite/matthewturk/e3808b4172b7f80141788b45236831ca/dc65ec026c5cedc267a2da47d6fa4268d2b18bcb/movies-hconcat.json">Example Vega-Lite plot</a></li>
+</ul>
+
+            </div>
+            <div class="column">
+                
+                <figure class="image">
+                    <img src="/is445_spring2021/assets/undraw/undraw_data_trends_b0wg.svg">
+                </figure>
+                
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+<section class="section">
+    <div class="container">
+        <h2 class="subtitle">Lectures</h2>
+        
+        <article class="media">
+            <figure class="media-left">
+                <span class="icon is-large"><i class="fas fa-3x fa-chalkboard-teacher"></i></span>
+            </figure>
+            <div class="media-content">
+                <p><a href="/is445_spring2021/week01/lecture01.html">Class Introduction</a></p><p>The syllabus for the course, along with discussions about "what" visualizations are, and how to orient yourself in the course.</p>
+            </div>
+        </article>
+        
+        <article class="media">
+            <figure class="media-left">
+                <span class="icon is-large"><i class="fas fa-3x fa-chalkboard-teacher"></i></span>
+            </figure>
+            <div class="media-content">
+                <p><a href="/is445_spring2021/week01/lecture02.html">Why and How Do We Visualize?</a></p><p>What are some of the basics of how we interpret visualizations?  How can we describe the process of making choices, understanding our audience, and so forth?</p>
+            </div>
+        </article>
+        
+        <h2 class="subtitle">Examples</h2>
+        
+        <article class="media">
+            <figure class="media-left">
+                <span class="icon is-large"><i class="fas fa-3x fa-chart-line"></i></span>
+            </figure>
+            <div class="media-content">
+                <p>
+                    
+                    <a href="../nbv.html?notebook_name=%2Fis445_spring2021%2Fweek01%2Flecture02_examples.ipynb">Markdown and Jupyter Examples</a> - (<a href="/is445_spring2021/lecture02_examples.ipynb">download</a>)
+                    
+                </p>
+                <p>
+                    A handful of cells showing some markdown and how to execute in Jupyter notebooks
+                </p>
+            </div>
+        </article>
+        
+        <h2 class="subtitle">Assignments</h2>
+        
+        <article class="media">
+            <figure class="media-left">
+                <span class="icon is-large"><i class="fas fa-3x fa-pencil-ruler"></i></span>
+            </figure>
+            <div class="media-content">
+                <p><a href="/is445_spring2021/week01/popculture_assignment.html">Pop Culture Visualizations</a></p><p>Find and analyze viz in pop culture</p>
+            </div>
+        </article>
+        
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+    <div class="is-centered columns has-text-centered">
+        <div class="column is-6">
+            <p>
+                This course developed collaboratively by <a href="https://matthewturk.github.io/">Matthew Turk</a>
+                and <a href="https://astronaiman.com/">Jill Naiman</a> at the University of Illinois Urbana-Champaign
+                <a href="https://ischool.illinois.edu/">School of Information Sciences</a>.
+                The source code is released under a BSD 3-Clause license, allowing for reuse and redistribution.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    </body>
+</html>
