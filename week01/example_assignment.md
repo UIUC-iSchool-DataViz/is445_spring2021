@@ -1,3 +1,9 @@
+---
+title: Example HW 1 Submission
+layout: assignment
+description: Find and analyze viz in pop culture
+---
+
 # Example Submission
 
 This visualization is from the movie Alien (1979), directed by Ridley Scott.

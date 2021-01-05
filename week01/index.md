@@ -1,11 +1,20 @@
 ---
 layout: week
 visible: true
-visible_lec: true
-visible_n: true
+icon: undraw_data_trends_b0wg.svg
+notitle: true
+examples:
+  - filename: prep_notes_week01.ipynb
+    type: ipynb
+    title: Prep Notebook, Week 1
+    description: Prep notebook for this week
+  - filename: test_imports_week01.ipynb
+    type: ipynb
+    title: Test import notebook for HW 1
+    description: Notebook for HW 1
 ---
 
-# Week 1 - Introduction
+# Introduction
 
 This week, we went over the structure of the course, as well as some basics of
 why we visualize, who we visualize for, and how to think about our relationship

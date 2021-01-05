@@ -1,8 +1,18 @@
 ---
-title: Lecture 1
+title: Lecture 1 - Class Introduction & Why we Visualize
 layout: lecture
-visible_lec: true
-visible_n: true
+tags:
+  - overview
+  - concepts
+  - brain
+description: >-
+  The syllabus for the course, along with discussions about "what"
+  visualizations are, and how to orient yourself in the course.
+  <br><br>
+  What are some of the basics of how we interpret visualizations?  How can we
+  describe the process of making choices, understanding our audience, and so
+  forth?
+date: 2020-01-25
 ---
 <!-- .slide: class="titleslide" -->
 
@@ -10,7 +20,7 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
+## Spring 2021
 
 ---
 
