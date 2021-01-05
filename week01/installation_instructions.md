@@ -1,11 +1,8 @@
 ---
-layout: week
-visible: false
-visible_lec: true
-visible_n: true
+title: Installation Instructions
+layout: assignment
+description: Install necessary packages for this class
 ---
- 
-# Installation instructions
 
 ## 1. Install Anaconda with Python 3
 
@@ -26,14 +23,14 @@ Next, follow these installation steps to install anaconda on your computer:
 
 Now we will make a "stand-alone" envirnoment to do our data-viz stuff in.  This is useful to make sure we install packages in a way that will not cause bad interactions.
 
-Here is a ~2 minute movie of how this process looks on my Mac (it may take longer on your machine!) which covers the instructions in section 2.1 and 2.2 of the installation process:
+Here is a ~2 minute movie of how this process looks on my Mac (it may take longer on your machine!) which covers the instructions in section 2.1 and 2.2 of the installation process (note: this uses Python 3.8, but you should try with Python 3.7 first):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2iPGcTBHPGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 2.1 Conda environment
  1. On a Mac search for the "Terminal" prompt/on Windows search for the Anaconda prompt (NOT the navigator)
- 2. In the terminal window type: `conda create -n DataViz python=3.8 matplotlib=3.2.2 numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet wordcloud nltk xlrd libpng pip yt -c conda-forge`
-    * **NOTE #1:** if this fails or there are package conflicts you can try with Python 3.7 -- In the terminal window type: `conda create -n DataViz python=3.7 matplotlib=3.2.2 numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet wordcloud nltk xlrd libpng pip yt -c conda-forge`
+ 2. In the terminal window type: `conda create -n DataViz python=3.7 matplotlib=3.2.2 numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet wordcloud nltk xlrd libpng pip yt -c conda-forge`
+    * **NOTE #1:** if this fails or there are package conflicts you can try with Python 3.8 -- In the terminal window type: `conda create -n DataViz python=3.8 matplotlib=3.2.2 numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet wordcloud nltk xlrd libpng pip yt -c conda-forge`
 	* **NOTE #2:** you might see the following message `Solving environment: failed with initial frozen solve. Retrying with flexible solve.`  This does not mean your installation has failed -- as long as its still running let it be! (This can take a while -- average is ~30 minutes, but sometimes it can take over night.)
  3. When prompted, enter y and press return to install stuff (this can take a while too!)
  
@@ -41,8 +38,10 @@ Here is a ~2 minute movie of how this process looks on my Mac (it may take longe
 
 ### 2.2 Pip install remaining packages
  1. Follow the prompt to "activate" this environment with: `conda activate DataViz`
- 1. Still in terminal window do: `pip install PyGEL3D`
-	* NOTE: as of writing, PyGEL3D is not supported on machines other than Mac OSX and/or Windows.  We will only use this package briefly so it is not the end of the world if you cannot install it.
+ 
+#### OPTIONAL
+ * Still in terminal window do: `pip install PyGEL3D`
+	* NOTE: as of writing, PyGEL3D is not supported on machines other than Mac OSX and/or Windows.  This is for some extra notebooks (we will touch on briefly, but you don't have to use for assignments).
 
 ## 3. Run & Test your environment
 
