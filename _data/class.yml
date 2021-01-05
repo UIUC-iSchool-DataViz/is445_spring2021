@@ -1,32 +1,32 @@
 instructor: 
-  name: Matthew Turk
-  email: mjturk@illinois.edu
+  name: Jill Naiman
+  email: jnaiman@illinois.edu
   office: Online!
-  office_hours: By appointment
+  office_hours: TBD & By appointment
 tas:
   -
-    name: Mohammad Amanzadeh
-    email: amanzad2@illinois.edu
+    name: Clair Irwin
+    email: ceflynn2@illinois.edu
     office: Online!
-    office_hours: Wednesday, 2PM-3PM
+    office_hours: TBD
 course:
   name: Data Visualization
   number: IS445
-  semester: Fall 2020
-  section: BOG-BOU
+  semester: Spring 2021
+  section: AOG-AOU
   location: Online
-  time: Tuesday and Thursday, 9:30AM-10:50AM
+  time: Monday, 9:00AM-11:50AM
   credit_hours: 4
 urls:
   -
     name: Slack
-    url: https://is445-fall2020.slack.com/
+    url: TBD
   - 
     name: Moodle
-    url: https://learn.illinois.edu/course/view.php?id=50825
+    url: TBD
   -
     name: Course Materials
-    url: https://uiuc-ischool-dataviz.github.io/fall2020-BOG-BOU/
+    url: https://uiuc-ischool-dataviz.github.io/is445_spring2021/
   -
     name: Github
-    url: https://github.com/UIUC-iSchool-DataViz/fall2020-BOG-BOU/
+    url: https://github.com/UIUC-iSchool-DataViz/is445_spring2021
