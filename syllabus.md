@@ -263,6 +263,7 @@ more so on completeness and thoughtfulness.
 ### Grading Policy
 
 All assignments are required for all students, aside from one homework (lowest HW grade will be dropped). 
+Note that the Syllabus Quiz is in the homework grading category, but will *not* be droppable.
 Completing all assignments is
 not a guarantee of a passing grade.  You must do homework, visualization reports, and final to 
 receive a passing grade. Late or incomplete assignments will not be given full credit
