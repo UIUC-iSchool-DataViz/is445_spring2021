@@ -224,12 +224,11 @@ see: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/test_import
 
  * Week 1 (Today) - Introduction
  * Week 2 - Data Storage and Operations
- * Week 3 - Holiday!
- * Week 4 - Types of Viz and Choosing Colors
- * Week 5 - Beginning interactivity
- * Week 6 - Continuing interactivity with bqplot
- * Week 7 - More with dashboards & Map Viz
- * Week 8 - Maps, maps and more maps
+ * Week 3 - Types of Viz and Choosing Colors
+ * Week 4 - Beginning interactivity
+ * Week 5 - Continuing interactivity with bqplot
+ * Week 6 - More with dashboards & Map Viz
+ * Week 7 - Maps, maps and more maps
  
 notes:
 This is a rough syllabus!  These are many of the topics we will cover, but
@@ -247,14 +246,14 @@ We might start getting into javascript earlier, depending on how we are doing.
 
 ## Syllabus, cont
 
- * Week 9 - Iodide and Intro to Javascript
+ * Week 8 - Iodide and Intro to Javascript
+ * Week 9 - **Fake break!**
  * Week 10 - Viz Audience; More Iodide, Javascript & Vega-lite (and maybe Idyll)
  * Week 11 - Intro to Idyll
  * Week 12 - More with Idyll, Publishing Viz
  * Week 13 - A few more Idyll+d3 things
- * Week 14 - Holiday!
- * Week 15 - Scientific Viz & AVL Guest lecture
- * Week 16 - Network Visualization & Word clouds
+ * Week 14 - Scientific Viz & AVL Guest lecture
+ * Week 15 - Network Visualization & Word clouds
 
 notes:
 Toward the end of class we are going to have a slightly more free-form set of
@@ -558,6 +557,13 @@ There are 3 pathways (that I can see in this course, could be more!)
        * do the Javascript parts
        * if you're new to programming, do Javascript parts in class, and build on them for any HW
        * come back to the optional texts/docs after the course is over
+	   
+---
+
+## Other strategies for success
+
+ 1. Some assignments are assigned over 2 weeks - use full 2 weeks!
+ 1. There are extra credit opportunities, the max HW score is 40%
 
 ---
 

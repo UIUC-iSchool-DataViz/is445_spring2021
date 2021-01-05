@@ -184,6 +184,8 @@ Criteria for grading homework assignments include (but are not limited to) creat
  
 *This applies to code as well* -- you are welcome to use online sources (e.g. StackOverflow) but be sure to include the URL in your code comments.
 
+Additionally, unless explicitly stated **do not** publish homework solutions online.
+
 # Statement of Inclusion
 
 [Review the statement](http://www.inclusiveillinois.illinois.edu/mission.html).
@@ -200,15 +202,18 @@ This syllabus may be obtained in alternative formats upon request. Please contac
 
 # Assignments and Evaluation
 
-Students will be graded based on a combination of assignments (70%: 40% standard prose/code assignments and
+Students will be graded based on a combination of assignments (70%: 40% (maximum) standard prose/code assignments and
 30% weekly visualization reports) and a final
 project (30%).  The final project will be a capstone to the course, and will
 have greater flexibility in software packages and data sources.  This project
-will be introduced in Week 8.
+will be introduced around Week 8.
+
+There will be opportunities for extra credit in the homework and final project portions.  The *maximum* homework score is 
+fixed at 40% (even with extra credit included).
 
 **In summary, your grades consist of:**
 
-| 40% | Standard assignments in prose or code form
+| 40% | Standard assignments in prose or code form (40% is the MAX grade, even with extra credit)
 | 30% | Weekly visualization reports
 | 30% | Final project
 
@@ -241,6 +246,13 @@ be collected electronically.
 
 The submission process for homeworks will be described by example during class
 before any homeworks are to be submitted.
+
+Submissions will be in PDF and/or .ipynb (Jupyter notebook) format, and, when 
+appropriate, a datafile needed to run the notebook file.  If coding is 
+required for the assignment, you will *not* get full points if you do not 
+submit the notebook file.  If the code requires a dataset and this is not 
+included in your submission you will not get full credit.  Files should be 
+uploaded individually, no *.zip files will be accepted.
 
 Each assignment will be based on "correctness" and the narrative description of
 the process.  "Correctness" in this case indicates that the code runs without
