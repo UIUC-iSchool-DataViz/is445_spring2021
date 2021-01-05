@@ -181,6 +181,8 @@ Please be aware that the consequences for plagiarism or other forms of academic 
 Criteria for grading homework assignments include (but are not limited to) creativity and the amount of original work demonstrated in the assignment. However, students are permitted to use and adapt the work of others, provided that the following guidelines are followed:
  * Use of other people’s material must not infringe the copyright of the original author, nor violate the terms of any licensing agreement. Know and respect the principles of fair use with respect to copyrighted material.
  * Students must scrupulously attribute the original source and author of whatever material has been adapted for the assignment. Summarize the changes or adaptations that have been made. Make plain how much of the assignment represents original work.
+ 
+*This applies to code as well* -- you are welcome to use online sources (e.g. StackOverflow) but be sure to include the URL in your code comments.
 
 # Statement of Inclusion
 
