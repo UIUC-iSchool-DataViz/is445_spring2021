@@ -58,7 +58,7 @@ layout: default
                 </p>
             </div>
         </article>
-        {%endfor%}
+        {% endfor %}
 
         <h2 class="subtitle">Data</h2>
         {% for example in page.data %}
@@ -75,9 +75,19 @@ layout: default
                 </p>
             </div>
         </article>
-        {%endfor%}
-	
+        {% endfor %}
+
+	<!-- don't include assignments if not there -->
+	{% assign hasAssignments = "NO" %}
+        {% for assignment in assignments %}
+	 {% assign hasAssignments = "YES" %}
+	{% endfor %}
+
+
+        {% if hasAssignments == "YES" %}
         <h2 class="subtitle">Assignments</h2>
+	{% endif %}
+	
         {% for assignment in assignments %}
         <article class="media">
             <figure class="media-left">
