@@ -10,8 +10,13 @@ examples:
     description: Prep notebook for this week
   - filename: test_imports_week01.ipynb
     type: ipynb
-    title: Test import notebook for HW 1
+    title: Import notebook for HW 1
     description: Notebook for HW 1
+data:
+  - filename: GDP.csv
+    type: data
+    title: GDP dataset
+    description: GDP dataset from FRED
 ---
 
 # Introduction

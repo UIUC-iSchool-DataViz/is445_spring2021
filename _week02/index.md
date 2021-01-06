@@ -1,23 +1,48 @@
 ---
 layout: week
 visible: true
-icon: undraw_data_trends_b0wg.svg
+icon: undraw_version_control_9bpv.svg
 notitle: true
 examples:
-  - filename: lecture02_examples.ipynb
+  - filename: prep_notebook_week02.ipynb
     type: ipynb
-    title: Markdown and Jupyter Examples
-    description: A handful of cells showing some markdown and how to execute in Jupyter notebooks
+    title: Prep Notebook, Week 2
+    description: Prep notebook for this week
+  - filename: starter_notebook_for_option2_homework_week02.ipynb
+    type: ipynb
+    title: Starter notebook - HW 2
+    description: Notebook for HW 2
+  - filename: spring2019_prep_notebook_week02.ipynb
+    type: ipynb
+    title: Extra notebook (2019)
+    description: Extra notebook from 2019 class
 ---
 
-# Introduction
+# Data Storage and Operations
 
-This week, we went over the structure of the course, as well as some basics of
-why we visualize, who we visualize for, and how to think about our relationship
-with our data.
+This week we discussed how data is stored on disk and in memory, how that
+interacts with our visualization process, and we introduced the notion of a
+palette of operations you can apply to data to visualize it.
 
- * [Mark Newman's Election Maps](http://www-personal.umich.edu/~mejn/election/2008/)
- * [Lilo & Stitch](https://www.netflix.com/title/60022989)
- * [Peg + Cat: The Three Friends Problem](http://www.pbs.org/parents/peg/episode-119-the-big-dog-problem-the-three-friends-problem/)
- * [FRED](https://fred.stlouisfed.org)
- * [Example Vega-Lite plot](https://vega.github.io/editor/#/gist/vega-lite/matthewturk/e3808b4172b7f80141788b45236831ca/dc65ec026c5cedc267a2da47d6fa4268d2b18bcb/movies-hconcat.json)
+## Downloads: Data
+
+ * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week02/building_inventory.csv" download>Building Inventory CSV file (building_inventory.csv)</a>
+ * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week01/images/stitch_reworked.png" download>Stitch Image (stitch_reworked.png)</a>
+ * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png" download>Another practice image (littleCorgiInHat.png)</a>
+
+## References
+
+ * Python:
+    * <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-10-JSONandCSV.ipynb">IS452's Intro to Reading & Writing CSV files (scroll down on page)</a>
+    * <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-09-Dictionaries.ipynb">IS452's Dictionary week</a>
+ * Colors: <a href="https://www.rapidtables.com/web/color/RGB_Color.html">RGB color triplets (we will also cover this extensively next week)</a>
+
+## Optional Reading List (See syllabus for acronyms)
+
+ 1. VAD, Ch. 2: What: Data Abstraction 
+ 2. <a href="https://serialmentor.com/dataviz/aesthetic-mapping.html">FDV, Ch. 2: Visualizing data: Mapping data onto aesthetics</a> 
+ 3. VAD, Ch. 13: Reduce Items and Attributes 
+ 4. <a href="https://serialmentor.com/dataviz/image-file-formats.html">FDV, Ch. 27: Understanding the most commonly used image file formats</a> 
+ 5. <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-10-JSONandCSV.ipynb">IS452's intro to CSV files (bottom of page)</a> 
+ 6. <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-09-Dictionaries.ipynb">IS452's Intro to Dictionaries</a> 
+ 7. <a href="https://pandas.pydata.org/pandas-docs/stable/">Pandas Docs</a> & <a href="https://docs.scipy.org/doc/numpy/reference/">NumPy Docs</a> 

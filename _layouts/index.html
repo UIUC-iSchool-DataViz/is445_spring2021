@@ -100,7 +100,20 @@ layout: default
             </div>
         </div>
         {% endfor %}
+
+        {% for example in f.data %}
+        <div class="column has-text-centered">
+            <div>
+                <p>
+                    <span class="icon is-large"><i class="fas fa-2x fa-database"></i></span>
+                </p>
+                <p>
+                    <a href="{{f.dir | append: example.path | append: "data/" | append: example.filename | relative_url }}">{{example.title}}</a>
+                </p>
+            </div>
         </div>
+        {% endfor %}
+        
     </div>
 </div>
 <hr/>

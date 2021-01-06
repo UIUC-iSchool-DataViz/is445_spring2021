@@ -1,316 +1,1137 @@
 ---
-title: Why and How Do We Visualize?
+title: Lecture 2
 layout: lecture
-tags:
-  - concepts
-  - brain
-description: >-
-  What are some of the basics of how we interpret visualizations?  How can we
-  describe the process of making choices, understanding our audience, and so
-  forth?
-date: 2020-08-27 
+visible_lec: true
+visible_n: true
+---
+<!-- .slide: class="titleslide" -->
+
+# Data Visualization
+<div style="height: 6.0em;"></div>
+
+## Jill P. Naiman
+## Fall 2020
+## Lecture 2
+
 ---
 
-# Why?
+<br>
+<br>
+<br>
 
-(Or rather, why _wouldn't_ we visualize?)
+# Bureaucracy, Redux
+
+---
+
+## How to get help
+
+Jill P. Naiman - `jnaiman@illinois.edu`
+ * Office Hours: Tuesday 5-6pm, Mondays 8-9pm after class; other times by request
+
+TA: Diptendra Bagchi, `dbagchi2@illinois.edu`
+ * Office Hours: Monday/Thursday 11am-12pm
+
+https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/
+
+---
+
+## In summary: where things will be located:
+
+ * Moodle - where the grades and assignments will be posted
+
+ * Course webpage: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/ - where lecture slides, notebooks, data & general course info will live.
+
+ * Slack: https://is445-fall2020.slack.com - the best place to ask questions
+
+---
+
+## An addition: jupyterhub
+
+[http://jupyterhub.ischool.illinois.edu/](http://jupyterhub.ischool.illinois.edu/)
 
 notes:
-Not everything suits itself to visualization -- and part of the reason for that
-is the necessary reductionism that visualization can require.
+this may not have all the right packages however
 
 ---
 
-<iframe width="1024" height="576"
-src="https://www.youtube.com/embed/In72QAQJ1tY?rel=0" frameborder="0"
-allow="encrypted-media" allowfullscreen></iframe>
+## Weekly Visualization Reports
+
+Every week, you are to turn in a visualization you have found in the media
+(newspapers, magazines, online journalism) and a brief summary of something you like/don't like,
+think is interesting, etc.
+
+_These are meant to be easy points:_ No more than 2-3 sentences are needed in your description.
 
 notes:
-"There are lots of thing you can compare on a graph / Like who is the shortest
-or the tallest giraffe / You can chart how much you walk / How much that you
-laugh / There are lots of things you can compare on a graph"
-
-"But the one thing you can't chart / Is how you feel in your heart"
+our first one is assigned today, due next week -- remember, I'll pick someone randomly to ask you about yours!
 
 ---
 
-<!-- .slide: data-background-image="images/fov.svg" data-background-size="contain" -->
+## Assignment 1
+
+<span style="color:red">Part 2: an intake survey</span> 
+
+<span style="color:red">Part 3: Say hi on Slack!</a>
 
 notes:
-Visual information is communicated through our eyes, where it is processed.  At
-the most basic level, we can see a range of about 210 degrees horizontally with
-one or both eyes.  The region that is covered by both ("binocular") is about
-114 degrees in extent.
-
-You can only cram so much information into the human eye.
+these last two count for ~25% of this hw grade so I'll carefully ignore you if you are typing on something else for a few min!
 
 ---
 
-![](https://upload.wikimedia.org/wikipedia/commons/2/27/AcuityHumanEye.svg)
+## Homework grading
 
-By Vanessa Ezekowitz [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons
+ * Homework points will be listed as reference, all HWs will be graded out of 100%, all HWs are worth the same
+ * We *will* drop a HW score
+
+---
+
+## Choose your own adventure
+
+There are 3 pathways (that I can see in this course, could be more!)
+
+ 1. "I am here to get better at programming and play with viz platforms"
+ 1. "I am thinking about a career in data viz."
+ 1. "I don't know/I am new to programming and I want to focus on that."
 
 notes:
-When we think about visual communication of information, we *must* think about
-how human physiology interacts with that communication.
-
-Also, fair warning: I'm not a medical doctor.
-
-This diagram shows the visual acuity of a "standard" human eye, as a function
-of angular distance from the fovea.  We have to think about this in
-*conjunction* with our field of view.
+just a few reminders if you're in the 3rd track, or any track really!
 
 ---
 
-## Your brain does interpolation
+## Choose your own adventure
 
-<!-- .slide: data-background-image="images/dotsillusion.jpg" data-background-size="auto 50%" -->
+There are 3 pathways (that I can see in this course, could be more!)
 
-There are 12 dots, can you count them all at the same time?
-
-
----
-
-## Your brain does interpolation
-
-<!-- .slide: data-background-image="images/blindspotcross.png" data-background-size="auto" -->
-
-1. Look at the cross
-2. Close left eye, keep looking at the cross
-3. Slowly move your head toward & away from screen until dot disappears
+ 3. "I don't know/I am new to programming and I want to focus on that."
+    * Strategy: 
+       * look at the code, focus heavily on Python
+       * <span style="color:red">read the prep notebooks before class!</span>
+       * do the Javascript parts
+       * if you're new to programming, do Javascript parts in class, and build on them for any HW
+       * come back to the optional texts/docs after the course is over
 
 ---
 
-## Your brain does interpolation
+## Many ways to get notes
 
-Even despite these oddities, the visual cortex is great for information transfer!  
-
-Your visual cortex is processing information from different parts of this page **at the same time** -- it can do impressive things very quickly!
+ 1. The course website, last I taught it - https://uiuc-ischool-dataviz.github.io/spring2020/
+ 1. The course website, Fall 2019 - https://uiuc-ischool-dataviz.github.io/fall2019/
 
 ---
 
-## Can you spot the difference?
+## Today
 
-<!-- .slide: data-background-image="https://www.rd.com/wp-content/uploads/2018/01/Can-You-Spot-the-10-Differences-in-This-Picture-_585659516-Ksenya-Savva.jpg" data-background-size="auto 75%" -->
+<img src="images/data_viz_diagram.png">
 
 notes:
-compare this to how long it would take to spot differences in 2 songs - you'd have to listen to both songs (probably more than once) and compare after!  This would be sequential rather than parallel data transfer!
+
+today we're going to get some practice with the practicalities of dealing with data
+
+We'll talk a bit about the kinds of data that are out there and their definitions, and how many people disagree on these definitions!
 
 ---
 
-## Try it with sound
-
-* [Moonlight Sonata, 1](https://soundcloud.com/redreapergrell/beethoven-moonlight-sonata)
-* [Moonlight Sonata, 2](https://soundcloud.com/user-37232775/sets/beethoven-moonlight-sonata)
-
-Try doing the same thing with these on your own!
+<img src="https://static.wixstatic.com/media/6efa5f_e6f70adbf18e41fd8e369abc4c309563~mv2.png/v1/fill/w_770,h_434,al_c,lg_1,q_85/Types%20of%20Data_Visual_PNG.webp">
 
 notes:
-time this activity, give them 1.5 minutes
+So, usually you're probably used to thinking about data like this - numerical or quantitative which is then broken down into discrete & continous.
 
-ask: how long did this take you?  How many differences were there?
-I spotted tempo as one (but you can cheat by looking at the timer on the bottom!)
-
-Also, you can look at how different each of the sound-bars are on each link and see how different the music looks visually!
+Also categorical or qualitative data which is either ordered (ordinal) or unordered (nominal).
 
 ---
 
-## Why visualize?
+<img src="https://static.wixstatic.com/media/6efa5f_e6f70adbf18e41fd8e369abc4c309563~mv2.png/v1/fill/w_770,h_434,al_c,lg_1,q_85/Types%20of%20Data_Visual_PNG.webp">
 
-Visualization **augments** human data analysis capabilities:
-
- * It enhances our ability to pattern find
- * It allows us to summarize data quickly
- * It allows us to search our data quickly
-
-
----
-
-
-## I need a volunteer!
+We need to dig a little deeper for data viz.
 
 notes:
-(This part is a bit of a stunt.  Sorry.)
+This is a fine for something like stats, but we have to start thinking about how data type and format maps itself visually -- what is the best mapping for our visual cortex?
 
 ---
 
-*Read these numbers:*
+## Data organization is important
 
-| | |
-|:-|-:|
-| 2007-01-01 | 14233.2 |
-| 2007-04-01 | 14422.3 |
-| 2007-07-01 | 14569.7 |
-| 2007-10-01 | 14685.3 |
-| 2008-01-01 | 14668.4 |
-| 2008-04-01 | 14813.0 |
-| 2008-07-01 | 14843.0 |
-| 2008-10-01 | 14549.9 |
-| 2009-01-01 | 14383.9 |
+<div class="left">
+	<img src="images/tamaraSlide.png" width=450>
+</div>
+<div class="right">
+    <img src="images/tamaraTables.png" width=350>
+	 - Munzner - https://www.cs.ubc.ca/~tmm/talks.html
+
+</div>
+
+
 
 notes:
-See what I mean?  It's a stunt.  You're supposed to hear these, or look at the
-numbers, and not have as clear an impression.  It also takes a lot longer.
+We have to think a little bit about how our data represents reality *and* how it is represented on disk.
+
+for example, both spatial data like that on a map and data that we use to compare salaries for example, are numerical data - we have lat/long and data value combinations for geographic data and numbers for salaries, but there is something fundementally different about how we would represent these two datasets on a visualization
+
+Similarly for categorical data like with an organization, network, or a tree -- this data is much different than a table of categorical occurances.
 
 ---
 
-![FRED Graph](images/fredgraph.png)
+## Example: Temporal data is numerical, but its also something "else"
+
+<!-- .slide: class="two-floating-elements" -->
+
+<div class="left">
+
+<img src="http://serialmentor.com/dataviz/aesthetic_mapping_files/figure-html/temp-normals-vs-time-1.png" width="400px">
+
+</div>
+
+<div class="right">
+
+<img src="http://serialmentor.com/dataviz/coordinate_systems_axes_files/figure-html/temperature-normals-polar-1.png" width="400px">
+
+</div>
 
 notes:
-You might immediately notice a few things about this image, but one item that
-we will talk about as class goes on is that often visualizations can have a
-consistent style.  FRED in particular has a "branding" that is quite obvious,
-even without the logo.
+temporal data, like here the temperature change in a vew places over time, is numerical, but, depending on what time spans we are interested in, its can also be periodic
+
+The first graph tell us a lot, and the 2nd may at first be a little weird to read but it tells us information about both changes in time and the averages about the place *and* it captures a central nature about this data - that it is periodic
 
 ---
 
-## Anscombe's Quartet
+<!-- .slide: class="two-floating-elements" -->
 
-This famous example shows 4 datasets with the exact same mean, variance and correlation coefficient.
+## Files, Data, and Organization
 
-Statistics can be useful, but visualization generated context!
+* Text
+  * ASCII (raw)
+  * CSV / TSV
+  * JSON
+* Binary
+  * HDF5
+  * PNG/BMP/GIF/JPG/etc
+  * Excel
+  * Arrow
+* Query-based
+  * SQL
+  * JSON/REST
 
-<a title="Anscombe.svg: Schutz
-(label using subscripts): Avenue / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Anscombe%27s_quartet_3.svg"><img width="768px" alt="Anscombe&#039;s quartet 3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Anscombe%27s_quartet_3.svg/1000px-Anscombe%27s_quartet_3.svg.png"></a>
+<div class="right" markdown=1>
 
----
+<!--![](diagrams/row_col.svg)-->
+<img src="diagrams/row_col.svg" alt="drawing" width="150"/>
 
-## Anscombe's Quartet -- Dinosaur Edition
+<!--![](diagrams/hdf5pic.png)-->
+<img src="images/hdf5pic.png" alt="drawing" width="250"/>
 
-<!-- .slide: data-background-image="https://miro.medium.com/max/600/1*W--cGoA3_n2ZlU6Xs4o2iQ.gif" data-background-size="auto 50%" -->
+<img src="images/jsonex.png" alt="drawing" width="150"/>
 
-Statistics can be useful, but visualization generated context!
-
----
-
-# Who are you visualizing for?
-
-* For yourself?
-* For a peer?
-* For someone else?
+</div>
 
 notes:
-*Whenever* you build a visualization you need to think about the context that
-you can assume on the part of your viewer.
+We also need to worry a bit about how this data is stored on disk because that will tell us what steps are between us and (1) making the data user-friendly *and* putting into a format that we can make a visualization with
+
+read-write operations from disk are extremely time consuming, so raw text files come with massive overhead
+
+REST = REpresentational State Transfer - web architecture that keeps clients and servers independent and queries using flexible JSON formatting.
 
 ---
 
-# Tenet 1:
+<!-- .slide: class="two-floating-elements" -->
 
-"Visualizing data" is not a strict subset of "making an image."
+## Files, Data, and Organization
 
- * Collection of the data
- * Organization of that data
- * Representation of that data
+* Text
+  * ASCII (raw)
+  * <span style="color:red">CSV / TSV </span>
+  * JSON
+* Binary
+  * HDF5
+  * <span style="color:red">PNG/BMP/GIF/JPG/etc</span>
+  * Excel
+  * Arrow
+* Query-based
+  * SQL
+  * JSON/REST
+
+<div class="right" markdown=1>
+
+<!--![](diagrams/row_col.svg)-->
+<img src="diagrams/row_col.svg" alt="drawing" width="150"/>
+
+<!--![](diagrams/hdf5pic.png)-->
+<img src="images/hdf5pic.png" alt="drawing" width="250"/>
+
+<img src="images/jsonex.png" alt="drawing" width="150"/>
+
+</div>
 
 notes:
-We will approach visualization as encompassing several different stages in the
-collection, organization and representation of data.
+Today in our programming we'll be focusing on these 2 types and comparing our interactions with them
 
 ---
 
-# Tenet 2:
+## The "simple" pipeline
 
-We tell lies to visualize, but we _must_ be honest.
+<!-- .slide: data-background-image="images/viz_diagram.svg.png" data-background-size="contain"-->
 
- * No representation is going to convey the entire complexity of a dataset.
- * Some representations are better than others.
+notes: what we want is something like this where we have some data, we load it into Python/javascript/whatever and then we make a super cool viz.
 
 ---
 
-# Tenet 2:
+## The "simple" pipeline... is not so simple
 
-"The Principle of Proportional Ink" -- [callingbullshit.org](https://callingbullshit.org/)
-<!-- .slide: data-background-image="images/proportionalInk.png" data-background-size="auto 50%" -->
+From Elizabeth Wickes' talk: https://zenodo.org/record/3563145#.XjdvdRNKgtc
+
+<img src="images/elliexWickesTalk.png">
 
 notes:
-So let's first talk about how misleading visualizations can be. This 3D pie chart violates the "principle of proportional ink" which states that the number of pixels that represent a value should be proportional to the value. With the raised edge on the pie chart, the blue wedge gets way more ink than it deserves and you get a disproportionate sense of value.
+We know that this is not easy though! Especially for "complicated" data like we might run into out in the wild. While most of the data we'll use here will be less messy than "out in the wild" data, we nevertheless need to figure out how to process it a bit.
 
 ---
 
-# Tenet 2:
-
-"Spurious Correlations" -- [tylervigen.com](https://tylervigen.com/)
-
-<!-- .slide: data-background-image="images/spurious.png" data-background-size="auto 50%" -->
+<!-- .slide: data-background-image="images/viz_diagram2.svg.png" data-background-size="contain"-->
 
 notes:
-you can have a lot of absurd fun with data - but when data is presented in a visualization, people often believe the authority of it even if it's outlandish. 
+Today we are going to practice a bit of the data-reading part ourselves, but usually we are going to be
+able to make use of readers.
 
-This website has some good ideas of where to find sample datasets for upcoming homework assignments too!
+And we'll see how to go from raw "read in" data to data that is viz-ready.
 
 ---
 
-<!-- .slide: data-background-image="images/barCharts.png" data-background-size="contain" -->
+<br>
+<br>
+<br>
+
+# Let's consider tabular data
+
+---
+
+## Organization
+
+| | Column 1 | Column 2 | Column 3 | Column 4 |
+|-|-|-|-|-|
+|Row 1|11|21|31|41|
+|Row 2|12|22|32|42|
+|Row 3|13|23|33|43|
+
+Internally, this data is stored linearly, with one value immediately following
+another.  We can do this in two methods:
+
+||||||||||||||
+|:-|-|-|-|-|-|-|-|-|-|-|-|-|
+| Row | 11 | 21 | 31 | 41 | 12 | 22 | 32 | 42 | 13 | 23 | 33 | 43 |
+| Column | 11 | 12 | 13 | 21 | 22 | 23 | 31 | 32 | 33 | 41 | 42 | 43 |
+
+<!-- .element: class="fragment" -->
+
+---
+
+### Organization: Row
+
+| | | | | | | | | | | |
+|-|-|-|-|-|-|-|-|-|-|-|
+| 11 <!--.element: class="table-hl" -->| <!--.element: class="table-hl" -->21 | 31 | 41 | 12 | 22 | 32 | 42 | 13 | 23 | 33 | 43 |
+
+In row-oriented storage, successive _fields_ for a single _record_ are
+adjacent.
+
+<div style="height: 2.0em;"></div>
+
+### Organization: Column
+
+| | | | | | | | | | | |
+|-|-|-|-|-|-|-|-|-|-|-|
+| 11 <!--.element: class="table-hl" -->| 12 | 13 | <!-- .element: class="table-hl" --> 21 | 22 | 23 | 31 | 32 | 33 | 41 | 42 | 43 |
+
+In column-oriented storage, successive _records_ for a single _field_ are
+adjacent.
 
 notes:
-Each of these bar chart examples are meant to show the same data. But you can see how they're a bit problematic.
+These formats are more efficient when the information you're interested in is adjacent. For instance, operations requiring many rows and only a few columns benefit from row-oriented storage.
 
 ---
 
-<!-- .slide: data-background-image="images/gunDeaths.jpg" data-background-size="contain" -->
+## CSV (Comma-separated values)
+
+| Column 1 | Column 2 | Column 3 | Column 4 | Column 5 |
+|-|-|-|-|-|
+| . | . | . | . | . |
+| . | . | . | . | . |
+| . | . | . | . | . |
+| . | . | . | . | . |
+
+<div style="height: 2.0em;"></div>
+
+---
+
+## CSV (Comma-separated values)
+
+![](images/automobilesCSV.png)
+
+ * "Lowest-common denominator format" (widest available)
+ * Flexible delimiters 
+ * Ad hoc comments and headers (data readers need to be adapted)
+ * Row-oriented
+ * Row-size can vary: no implicit indexing
 
 notes:
-Now here's an example that's more brazen. I'll give you a minute to analyze this and tell me what's wrong with this graph.
+Sometimes called "DSV" or "Delimiter-separated values"
 
-Some people will claim the Y-axis should always start from the bottom - at zero - to avoid confusion.
+Ad hoc means data readers need to be adapted to format.
 
 ---
 
-<!-- .slide: data-background-image="images/keelingCurve.svg" data-background-size="contain" -->
+## Reading CSV
+
+```
+...
+390,1.83970e-003,-4.53930e-004,1.21520e-002
+395,4.61530e-003,-1.04640e-003,3.11100e-002
+400,9.62640e-003,-2.16890e-003,6.23710e-002
+405,1.89790e-002,-4.43040e-003,1.31610e-001
+410,3.08030e-002,-7.20480e-003,2.27500e-001
+415,4.24590e-002,-1.25790e-002,3.58970e-001
+420,5.16620e-002,-1.66510e-002,5.23960e-001
+425,5.28370e-002,-2.12400e-002,6.85860e-001
+...
+```
 
 notes:
-however, the Keeling Curve is an interesting counter-argument. This is the famous graph that was the original evidence for global warming, showing the rate at which atmospheric carbon dioxide was growing. 
-
-Does anyone know why it's generally accepted to show the y-axis like this, without it starting at the zero axis?
+Let's take this sample data and see how it's represented in computer memory.
 
 ---
 
-<!-- .slide: data-background-image="images/hearts_battery.svg" data-background-size="contain" -->
+```
+
+390,1.83970e-003,-4.53930e-004,1.21520e-002
+```
+
+If we assume ASCII encoding, this becomes:
+
+| | | | |
+|-|-|-|-|
+|"390" <!-- .element: class="table-hl" --> | 51 | 57 | 48 |
+<!-- .element: style="margin-left: 0.2em;" -->
+
+![](images/ASCII-Table2.jpeg)
 
 notes:
-here are a few more representations of data that you've probably run into!
+A string is not a number, but a list of characters. A character is a symbol represented by a unique byte as described in the ASCII table.
+
+---
+
+```
+
+390,1.83970e-003,-4.53930e-004,1.21520e-002
+```
+
+If we assume ASCII encoding, this becomes:
+
+| | | | |
+|-|-|-|-|
+|"390" <!-- .element: class="table-hl" --> | 51 | 57 | 48 |
+<!-- .element: style="margin-left: 0.2em;" -->
+
+Breaking this further down, we encode each character:
+
+||||||||||
+|-|-|-|-|-|-|-|-|-|
+|51 <!-- .element: class="table-hl" --> | 0 | 0 | 1 | 1 | 0 | 0 | 1 | 1 |
+|57 <!-- .element: class="table-hl" --> | 0 | 0 | 1 | 1 | 1 | 0 | 0 | 1 |
+|48 <!-- .element: class="table-hl" --> | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+<!-- .element: style="margin-left: 0.2em;" -->
+
+---
+
+```
+
+390,1.83970e-003,-4.53930e-004,1.21520e-002
+```
+
+If we assume ASCII encoding, this becomes:
+
+| | | | |
+|-|-|-|-|
+|"390" <!-- .element: class="table-hl" --> | 51 | 57 | 48 |
+<!-- .element: style="margin-left: 0.2em;" -->
+
+Breaking this further down, we encode each character:
+
+||||||||||
+|-|-|-|-|-|-|-|-|-|
+|51 <!-- .element: class="table-hl" --> | 0 | 0 | 1 | 1 | 0 | 0 | 1 | 1 |
+|57 <!-- .element: class="table-hl" --> | 0 | 0 | 1 | 1 | 1 | 0 | 0 | 1 |
+|48 <!-- .element: class="table-hl" --> | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+<!-- .element: style="margin-left: 0.2em;" -->
+
+**See aside on binary representations at the end of the lecture notes if you are curious!**
+
+---
+
+## A few other representations: JSON
+
+| | | |
+|:-|:-|:-|
+| Record 1 | Record 2 | Record 3 |
+
+<div style="height: 2.0em;"></div>
+
+ * Row-oriented
+ * Potentially-unknown subcomponent sizes (lists of lists)
+ * Common response to REST APIs
+ * Multiple types
+   * String
+   * Number
+   * Object (JSON)
+   * Array (list)
+   * Boolean
+   * null
+ * Format of .ipynb Python Notebooks
+
+notes:
+Another way to store tabular-like data is with JSON files.
+
+XML-like syntax for storing data values. 
+
+All fields for a record are presented at once.
+
+REST = REpresentational State Transfer - web architecture that keeps clients and servers independent and queries using flexible JSON formatting.
+
+**take a look at a jupyter notebook!**
+
+---
+
+```
+[
+ ...
+ {"Agency Name":"University of Illinois",
+  "Address":"501 E Daniel",
+  "City":"Champaign",
+  "Zip code":61820,
+  "Year Acquired":1992,
+  "Year Constructed":1935,
+  "Square Footage":21845,
+  "Total Floors":5
+ }, 
+ ...
+]
+```
+
+<div style="height: 2.0em;"></div>
+
+ * `[` and `]` indicate an array
+ * `{` and `}` indicate a JSON object (or mapping)
+ * `"` indicates a string
+ * Numbers are, well, numbers.
+
+---
+
+## A few other representations: HDF5
+
+| | | |
+|:-|:-|:-|
+| Column 1 | Column 2 | Column 3 |
+
+<div style="height: 2.0em;"></div>
+
+ * Columnar, chunked store
+ * Flexible data types in-memory and on-disk
+ * Hyperslab and boolean indexing
+ * Fine-grained key/val metadata
+ * Groups & hierarchies
+ * Extensible types:
+   * Numeric
+   * Fixed-length strings
+   * Variable strings
+
+---
+
+<br>
+<br>
+<br>
+
+# Let's consider image (spatial) data.
+
+notes:
+image data is an excellent example of data where the orientation of each element is important -- i.e. how we display things in space is not a choice that is really up to us, its up to the data!
+
+---
+
+<!-- .slide: data-background-image="../week01/images/stitch_nobg_tilted.png" data-background-size="contain"-->
+
+notes:
+how is this dataset "fundementally" different than a tabular dataset?
+
+---
+
+## Does reordering tables & columns matter?
+
+<!-- .slide: class="two-floating-elements" -->
+
+<div class="left">
+
+<img src="../week01/images/stitch_nobg_tilted.png" width="400px">
+
+</div>
+
+<div class="right">
+
+<img src="https://d13ot9o61jdzpp.cloudfront.net/images/tabular_data_1_the_perfect_format.png" width="400px">
+
+</div>
+
+notes: what happens if I re-order the rows of this table?
+
+Or columns?
+
+Is information lost or confused?
+
+---
+
+## Does reordering tables & columns matter?
+
+<!-- .slide: class="two-floating-elements" -->
+
+<div class="left">
+
+<img src="images/shuffled_stitch.png" width="400px">
+
+</div>
+
+<div class="right">
+
+<img src="https://d13ot9o61jdzpp.cloudfront.net/images/tabular_data_1_the_perfect_format.png" width="400px">
+
+</div>
+
+notes: 
+with data that is enharently spatial in nature, we see we lose information and can potentially confuse our viewer if we shuffle data location and order.
+
+---
+
+## Does reordering tables & columns matter?
+
+<!-- .slide: class="two-floating-elements" -->
+
+<div class="left">
+
+<img src="images/shuffled_stitch.png" width="400px">
+
+</div>
+
+<div class="right">
+
+<img src="https://d13ot9o61jdzpp.cloudfront.net/images/tabular_data_1_the_perfect_format.png" width="400px">
+
+</div>
+
+We'll start with manipulating image data and then move on to geographical data in a few lectures.
+
+notes: 
+with data that is enharently spatial in nature, we see we lose information and can potentially confuse our viewer if we shuffle data location and order.
+
+---
+
+<br>
+<br>
+<br>
+
+# Raster vs. Vector representations of image data
+
+notes:
+generally, we'll be in charge of *making* images from data and not using images as data themselves, but it is worth spending some time thinking about how images are actually represented on a computer.
+
+---
+
+## Let's draw a line.
+
+<!-- .slide: data-background-image="images/line.svg" data-background-size="auto 65%" data-background-position="right 10% bottom 50%"-->
+
+---
+
+## Let's draw a line.
+
+<!-- .slide: data-background-image="images/line.svg" data-background-size="auto 65%" data-background-position="right 10% bottom 50%"-->
+
+```
+start = (x0, y0)
+end   = (x1, y1)
+width = 1.0
+```
+<!-- .element: class="left_abs" style="width: 50%"-->
+
+notes:
+you can see a line is basically 5 bytes in memory - one byte for each integer end point coordinate, and one byte for the width.
+
+---
+
+## Let's draw a line.
+
+Convert to an 8x8 image.
+
+<!-- .slide: data-background-image="images/line_grid.svg" data-background-size="auto 65%" data-background-position="right 10% bottom 50%"-->
+
+notes: so, if we map this line to an image, we see that we lose a bit of information - the graphic becomes pixelated
+
+---
+
+## Let's draw a line.
+
+Convert to an 8x8 image.
+
+<!-- .slide: data-background-image="images/line_grid_fill.svg" data-background-size="auto 65%" data-background-position="right 10% bottom 50%"-->
+
+notes:
+this is how that line would look in a pixel representation
+
+---
+
+## Let's draw a line.
+
+Convert to an 16x16 image.
+
+<!-- .slide: data-background-image="images/line_grid_fine2.svg" data-background-size="auto 65%" data-background-position="right 10% bottom 50%"-->
+
+---
+
+## Let's draw a line.
+
+Convert to an 16x16 image.
+
+<!-- .slide: data-background-image="images/line_grid_fine2_fill.svg" data-background-size="auto 65%" data-background-position="right 10% bottom 50%"-->
+
+---
+
+## Let's draw a line.
+
+Convert to an 32x32 image.
+
+<!-- .slide: data-background-image="images/line_grid_fine4.svg" data-background-size="auto 65%" data-background-position="right 10% bottom 50%"-->
+
+---
+
+## Let's draw a line.
+
+Convert to an 32x32 image.
+
+<!-- .slide: data-background-image="images/line_grid_fine4_fill.svg" data-background-size="auto 65%" data-background-position="right 10% bottom 50%"-->
+
+notes: so we see our pixelation gets less and less sever if we increase the number of pixels in our image
+
+---
+
+## Representations
+
+We will concern ourselves with understanding two representations of an image:
+the **raster** representation and the **vector** representation.
+
+---
+
+## Representations: raster
+
+ * Each pixel is represented as a color (encoded by something like RGB)
+
+notes: there are other encodings like HSV
+
+---
+
+## Representations: raster
+
+ * Each pixel is represented as a color (encoded by something like RGB)
+ * Common file formats such as GIF, JPG, PNG
+
+---
+
+## Representations: raster
+
+ * Each pixel is represented as a color (encoded by something like RGB)
+ * Common file formats such as GIF, JPG, PNG
+ * Compression can be lossy (JPG) or lossless (PNG)
+ * Common Editors: Paint, Photoshop
+
+---
+
+## Representations: raster
+
+ * Each pixel is represented as a color (encoded by something like RGB)
+ * Common file formats such as GIF, JPG, PNG
+ * Compression can be lossy (JPG) or lossless (PNG)
+ * Common Editors: Paint, Photoshop
+
+In a raster image, you describe precisely what to display at each pixel.
+
+---
+
+## Representations: vector
+
+ * Each component is defined as a "drawing" component, or some action to be
+   taken by the rendering engine.  This can include paths, patterns,
+   shapes, and text.  Components have properties associated with them.
+
+---
+
+## Representations: vector
+
+ * Each component is defined as a "drawing" component, or some action to be
+   taken by the rendering engine.  This can include paths, patterns,
+   shapes, and text.  Components have properties associated with them.
+ * Common file formats are SVG, PDF, EPS
+
+---
+
+## Representations: vector
+
+ * Each component is defined as a "drawing" component, or some action to be
+   taken by the rendering engine.  This can include paths, patterns,
+   shapes, and text.  Components have properties associated with them.
+ * Common file formats are SVG, PDF, EPS
+ * The display does not exist until it is "rendered."
+
+---
+
+## Representations: vector
+
+ * Each component is defined as a "drawing" component, or some action to be
+   taken by the rendering engine.  This can include paths, patterns,
+   shapes, and text.  Components have properties associated with them.
+ * Common file formats are SVG, PDF, EPS
+ * The display does not exist until it is "rendered."
+ * Options for compression include (lossless) text compression, although
+   the rendering engine can simplify display
+
+---
+
+## Representations: vector
+
+ * Each component is defined as a "drawing" component, or some action to be
+   taken by the rendering engine.  This can include paths, patterns,
+   shapes, and text.  Components have properties associated with them.
+ * Common file formats are SVG, PDF, EPS
+ * The display does not exist until it is "rendered."
+ * Options for compression include (lossless) text compression, although
+   the rendering engine can simplify display
+ * Common Editors: Illustrator, Inkscape
+
+---
+
+## Representations
+
+Vector: 1 line (uncompressed, single precision)</br> 
+ * x0, y0, x1, y1, width </br>
+ * 5 bytes </br>
+ * 40 bits </br>
+
+---
+
+## Representations
+
+Vector: 1 line (uncompressed, single precision)</br> 
+ * x0, y0, x1, y1, width </br>
+ * 5 bytes </br>
+ * 40 bits </br>
+
+Raster: 1 pixel (uncompressed, singe bit-depth)</br>
+ * 1 bit
+
+---
+
+## Representations
+
+Vector: 1 line (uncompressed, single precision)</br> 
+ * x0, y0, x1, y1, width </br>
+ * 5 bytes </br>
+ * 40 bits </br>
+
+Raster: 1 pixel (uncompressed, singe bit-depth)</br>
+ * 1 bit
+
+If a line covers fewer than 40 pixels, raster is less memory than vector
+
+notes:
+keep in mind, compression algorithms can make these comparisons a little fuzzier
+
+---
+
+## Representations
+
+![](images/bigPixels.jpg)
+
+notes:
+in this image, all the lines ARE less than 40 pixels
+
+---
+
+## Representations
+
+![](images/smallPixels.jpg)
+
+notes:
+but in this image, the lines aren't. What's the difference? 
+
+The difference is the ratio of the size of the lines to the raster resolution.
+
+---
+
+## Representations
+
+![](images/zoomedPixels.jpg)
+
+notes:
+and now we're back to less than 40 pixels per line. But what changed? Not the resolution.
+
+Now most of the line goes off the screen. We haven't changed the coordinates, we've just zoomed in.
+
+Raster data discards any information outside of the domain. Vector data preserves all information, regardless of boundaries.
+
+so, for example, if you have a PDF document you can often times do "infinity zooming in" and STILL see sharp outlines of pictures/text.  But if its 
+a raster representation zooming in will make things look "pixelated" at some point.
+
+---
+
+## Raster Representation
+
+| | | | | |
+|-:|-|-|-|-|
+| | 1 Line | 10 Lines | 1000 Lines | 1e6 Lines |
+| &nbsp; &nbsp; &nbsp; `600x600` | 45kb &nbsp; | 45kb | 45kb | 45kb |
+
+notes: lets look at a few examples - for a 600x600 pixel image, we have to define data
+at each pixel, reguardless if we have a line there or not...
+
+---
+
+## Raster Representation
+
+| | | | | |
+|-:|-|-|-|-|
+| | 1 Line | 10 Lines | 1000 Lines | 1e6 Lines |
+|`  600x600` | 45kb | 45kb | 45kb | 45kb |
+|`1200x1200` | 180kb | 180kb | 180kb | 180kb |
+
+notes: so, if we increase the number of lines in the image...
+
+---
+
+## Raster Representation
+
+| | | | | |
+|-:|-|-|-|-|
+| | 1 Line | 10 Lines | 1000 Lines | 1e6 Lines |
+|`  600x600` | 45kb | 45kb | 45kb | 45kb |
+|`1200x1200` | 180kb | 180kb | 180kb | 180kb |
+|`2400x2400` | 720kb | 720kb | 720kb | 720kb |
+
+(uncompressed, 1-bit images)
+
+600 x 600 = 360,000 bits / 8 = 45,000 bytes = 45 kilobytes
+
+notes:
+You can see that regardless of the number of shapes, the image size stays the same
+
+---
+
+## Vector Representation
+
+| | | | | |
+|-:|-|-|-|-|
+| | 1 Line | 10 Lines | 1000 Lines | 1e6 Lines |
+|`600x600` | 5 bytes | 50 bytes | 5kb | 5Mb |
+|`1200x1200` | 5 bytes | 50 bytes | 5kb | 5Mb |
+|`2400x2400` | 5 bytes | 50 bytes | 5kb | 5Mb |
+
+(uncompressed, single precision)
+
+notes:
+see that now the memory required increases with increasing number of lines
+
+Now no matter the image size, the shape data stays the same size. You can see that with a large number of shapes, the raster representation becomes smaller for a large number of lines - 5Mb vs 720kb for the largest number of lines
+
+---
+
+## Text
+
+Modern fonts are composed of glyphs defined by functional forms of their shape.
+Font rendering engines such as freetype2 can generate bitmaps for fonts
+rendered at specific resolutions.
+
+---
+
+## Text
+
+Modern fonts are composed of glyphs defined by functional forms of their shape.
+Font rendering engines such as freetype2 can generate bitmaps for fonts
+rendered at specific resolutions.
+
+In raster image file formats, fonts do not need to be embedded: the rasterized,
+rendered version is the one that is transmitted to the viewer.
+
+---
+
+## Text
+
+Modern fonts are composed of glyphs defined by functional forms of their shape.
+Font rendering engines such as freetype2 can generate bitmaps for fonts
+rendered at specific resolutions.
+
+In raster image file formats, fonts do not need to be embedded: the rasterized,
+rendered version is the one that is transmitted to the viewer.
+
+In vector file formats, fonts can either be embedded (in whole or in part) or
+fallback fonts available to the rendering engine can be used.
+
+---
+
+<img src="images/font_A.png">
+
+<img src="images/font_O.png">
+
+<img src="images/font_T.png">
+
+<img src="images/font_X.png">
+
+---
+
+## Geographical Data
+
+Which of these are better represented as raster or vector?
+ 1. State Boundaries
+ 2. Relief (height) Map
+ 3. Population Density
+ 4. Capitol Cities
+
+notes:
+a simple cheat is anytime you see the word "density", it's easier to represent with raster.
 
 
 ---
 
-<!-- .slide: data-background-image="images/hearts_battery.svg" data-background-size="contain" -->
+<br>
+<br>
+<br>
+
+# Doing Stuff with Data
+
+Now that we understand a few ways that data can be stored, let's do some things
+to it.
 
 ---
 
-<!-- .slide: data-background-image="images/battery.svg" data-background-size="contain" -->
+<div class="left">
 
-<div style="padding-top: 15em;" data-markdown=true>
+![](images/palette.jpg)
 
- 1. Sensors read the current "fill" of the battery
-    * Analog / digital conversion
-    * Normalized with respect to expected "full"
- 1. This is then scaled to a percentage
- 1. The battery image is filled from left to right
- 1. The image is then rasterized and displayed
+<!-- .element: style="height: 20em;" -->
+</div>
 
+<div class="right" style="font-size: 150%;">
+<div style="height: 4.0em;"></div>
+In the abstract: You have a palette of operations to apply.
 </div>
 
 ---
 
-<!-- .slide: data-background-image="images/hearts_bw.svg" data-background-size="contain" -->
+## Filtering Operations
 
- * Some fixed maximum amount of damage
- * Each time damage is taken, decrement
- * Each time damage is reversed, increment
- * Display number of hearts as appropriate
+ * Relationships:
+   * Equality, inequality
+   * Quantitative value (less than, greater than)
+   * Intersection, disjoint
+ * Subsampling
+   * Regular sampling
+   * Randomized sampling
+   * Nyquist frequency
+ * Related data queries
+   * Queries on other columns at fixed row location
+   * External membership queries
 
 ---
 
-2 out of 3 "points"
+## Relationships Examples
 
-<!-- .slide: data-background-image="images/hearts_color.svg" data-background-size="contain" -->
+ * Equality
+   * Identity
+   * Quantitative values
+ * Ordering or quantitative
+   * Less than (or equal)
+   * Greater than (or equal)
+   * "Comes before" and "Comes after"
+ * Set-based operations
+   * "Is a member"
+   * "Is not a member"
+   * "Shares members"
+   * "Shares no members"
 
 ---
 
-<!-- .slide: data-background-image="images/hearts_color.svg" data-background-size="contain" -->
+## Examples
 
-![](images/doom_status.png)
+### Equality
+
+```
+value == "hello"
+value == 10
+```
+
+### Ordering and Quantitative
+
+```
+value < 30
+value > July 1, 2010
+```
+
+### Set-Based
+
+```
+value in ("red", "blue")
+value not in (3.141, 2.7)
+```
+
+---
+
+## Sampling
+
+We can choose a subset of points and use those to explore our data.  This is
+not without its possible faults, however.
+
+---
+
+<!-- .slide: data-background-image="images/sampling_fig1.png" data-background-size="contain" -->
+
+---
+
+<!-- .slide: data-background-image="images/sampling_fig2.png" data-background-size="contain" -->
+
+---
+
+<!-- .slide: data-background-image="images/sampling_fig3.png" data-background-size="contain" -->
+
+notes:
+We might preserve the shape better by alternate sampling methods. These random samplings preserve features that the uniform samplings lost - but they also lose features that the uniform sampling preserved.
+
+---
+
+<!-- .slide: data-background-image="images/sampling_fig4.png" data-background-size="contain" -->
+
+notes:
+You'll also notice that high rates of change are more susceptible to data loss. A better sampling algorithm would target these fast changing regions.
+
+---
+
+<!-- .slide: data-background-image="images/sampling_fig5.png" data-background-size="contain" -->
+
+notes:
+the Nyquist limit is the minimum rate at which a signal can be sampled without introducing errors - 2x the highest frequency in the data.
+
+You can see that in this higher frequency data, the same sampling rates fall apart faster.
+
+---
+
+<!-- .slide: data-background-image="images/sampling_fig6.png" data-background-size="contain" -->
+
+---
+
+<!-- .slide: data-background-image="images/teapots.png" data-background-size="contain" -->
+
+---
+
+## Let's try some stuff in Python with image data!
 
 ---
 
@@ -326,7 +1147,6 @@ This is a screenshot from the movie "Lilo and Stitch" where the little girl Lilo
 notes:
 The angle can be misleading. So can the relative width of the head vs the feet. The surface area is not consistent from top to bottom. Also there are empty areas in the mouth and eyes!
 
-
 ---
 
 <!-- .slide: data-background-image="images/stitch_nobg_tilted.png" data-background-size="contain"-->
@@ -334,73 +1154,10 @@ The angle can be misleading. So can the relative width of the head vs the feet. 
 notes:
 If we rotate the image so that the red liquid is level, do we get a different impression for how much bad is in Stitch?
 
----
+We'll spend some time messing with this image to try to understand how colors encode these goodness/badness levels
 
-<iframe width="1024" height="576"
-src="https://www.youtube.com/embed/D-uBv6jB7r0" frameborder="0"
-allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ---
 
-## Honesty
+## Homework: Two Choices!
 
-Our choices must be:
-
- * Deliberate
- * Informed
- * Motivated
- * Justifiable
-
----
-
-## Election Maps
-
-Mark Newman of the University of Michigan has created visualizations of the
-election maps from several of the most recent elections.  For more information
-and context, see his page http://www-personal.umich.edu/~mejn/election/2008/ .
-
- * [Map 1](http://www-personal.umich.edu/~mejn/election/2008/statemapredbluer1024.png)
- * [Map 2](http://www-personal.umich.edu/~mejn/election/2008/statepopredblue1024.png)
- * [Map 3](http://www-personal.umich.edu/~mejn/election/2008/countymapredbluer1024.png)
- * [Map 4](http://www-personal.umich.edu/~mejn/election/2008/countymappurpler1024.png)
- * [Map 5](http://www-personal.umich.edu/~mejn/election/2008/countycartpurple1024.png)
-
-notes:
-These are great, but some criticisms might be that the color red is more apparent to the human eye than the color blue. And in the population-to-area adjusted maps, it's difficult to read for people used to geographic accuracy.
-
-Map1 - this is just a geographical map of red and blue
-
-Map2 - cartogram weighted by population (note, NOT by electoral college population)
-
-Map3 - election results by county
-
-Map4 - percentage of votes by county
-
-Map5 - percentage of votes by county, weighted by population
-
----
-
-## This week: Wrap-up
-
- 1. We visualize to change how we understand things.
- 1. We visualize data for ourselves, for our peers, and for others.
- 1. Visualization is a series of steps that we take to produce a different
-    representation of data.
-
----
-
-## Assignment 1
-
- * Identify three visualizations in pop culture -- *not* academic literature.
-   This could be, for instance, from:
-   * Movies / TV / Music videos
-   * Everyday life
-   * Advertisements
- * Describe each one in detail
-   * Where did the data come from?
-   * Is the data quantitative, qualitative, categorical, etc?
-   * How was the data processed before being displayed?
-   * What method was used to display that data?
- * Replicate the visualization with different, but similarly “shaped,” data
-   * By hand is acceptable
-   * Computational methods should include source code
