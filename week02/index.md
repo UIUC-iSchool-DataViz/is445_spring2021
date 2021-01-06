@@ -25,6 +25,11 @@ data:
     type: data
     title: Corgi in Hat
     description: Image of a corgi in a hat
+  - filename: stitch_reworked.png
+    type: dataOtherWeek
+    title: Stitch Image
+    description: Three-color image of stitch
+    week: week01
 ---
 
 # Data Storage and Operations

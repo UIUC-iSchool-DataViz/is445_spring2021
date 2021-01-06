@@ -68,7 +68,12 @@ layout: default
             </figure>
             <div class="media-content">
                 <p>
-                    <a href="{{page.dir | append: example.path | append: "data/" | append: example.filename | relative_url }}">{{example.title}}</a>
+		  {% if example.type == "data" %}
+                   <a href="{{f.dir | append: example.path | append: "data/" | append: example.filename | relative_url }}">{{example.title}}</a>
+		  {% endif %}
+		  {% if example.type == "dataOtherWeek" %}
+                   <a href="{{ "/" | append: example.week | append: "/data/" | append: example.filename | relative_url }}">{{example.title}}</a>
+		  {% endif %}
                 </p>
                 <p>
                     {{example.description}}
