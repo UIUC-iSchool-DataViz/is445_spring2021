@@ -1,8 +1,13 @@
 ---
-title: Lecture 2
+title: Lecture 2 - Data storage & Operations, Image data
 layout: lecture
-visible_lec: true
-visible_n: true
+tags:
+  - overview
+  - concepts
+  - brain
+description: >-
+ When we draw something on a screen, how do we represent that internally, and how is that translated into pixels? How are values transformed from 0's and 1's into values we can manipulate and understand?
+date: 2020-02-01
 ---
 <!-- .slide: class="titleslide" -->
 
@@ -10,7 +15,7 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
+## Spring 2021
 ## Lecture 2
 
 ---

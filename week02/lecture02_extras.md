@@ -1,8 +1,13 @@
 ---
 title: Extras, Lecture 2
 layout: lecture
-visible_lec: true
-visible_n: true
+tags:
+  - overview
+  - concepts
+  - brain
+description: >-
+ More examples of drawing images in 2D and 3D; binary representations 
+date: 2020-02-01
 ---
 <!-- .slide: class="titleslide" -->
 
@@ -10,7 +15,6 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
 ## Extras for Lecture 2
 
 ---
