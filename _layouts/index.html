@@ -38,7 +38,7 @@ layout: default
     <div class="column is-one-quarter">
         <div class="has-text-centered">
             <h2 class="subtitle">
-				Week {{forloop.index}}
+		Week {{forloop.index}}
             </h2>
             <figure class="image">
             {% if f.icon %}
@@ -85,6 +85,7 @@ layout: default
         </div>
         {% endfor %}
         {% for example in f.examples %}
+        {% unless example.filename contains "2019" %}
         <div class="column has-text-centered">
             <div>
                 <p>
@@ -99,6 +100,7 @@ layout: default
                 </p>
             </div>
         </div>
+        {% endunless %}
         {% endfor %}
 
         {% for example in f.data %}
