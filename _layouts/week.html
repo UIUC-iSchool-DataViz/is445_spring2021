@@ -62,6 +62,38 @@ layout: default
             </div>
         </article>
         {% endfor %}
+	
+	<!-- don't include libraries if not there -->
+	{% assign hasLib = "NO" %}
+        {% for libs in page.library %}
+	 {% assign hasLib = "YES" %}
+	{% endfor %}
+
+
+        {% if hasLib == "YES" %}
+        <h2 class="subtitle">Python Libraries</h2>
+	{% endif %}
+	
+        {% for example in page.library %}
+        <article class="media">
+            <figure class="media-left">
+                <span class="icon is-large"><i class="fas fa-3x fa-book-open"></i></span>
+            </figure>
+            <div class="media-content">
+                <p>
+		  {% if example.type == "library" %}
+                   <a href="{{f.dir | append: example.path | append: "library/" | append: example.filename | relative_url }}">{{example.title}}</a>
+		  {% endif %}
+		  {% if example.type == "libraryOtherWeek" %}
+                   <a href="{{ "/" | append: example.week | append: "/library/" | append: example.filename | relative_url }}">{{example.title}}</a>
+		  {% endif %}
+                </p>
+                <p>
+                    {{example.description}}
+                </p>
+            </div>
+        </article>
+        {% endfor %}
 
         <h2 class="subtitle">Data</h2>
         {% for example in page.data %}
@@ -85,6 +117,7 @@ layout: default
         </article>
         {% endfor %}
 
+	
 	<!-- don't include assignments if not there -->
 	{% assign hasAssignments = "NO" %}
         {% for assignment in assignments %}

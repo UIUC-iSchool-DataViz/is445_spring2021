@@ -1,11 +1,43 @@
 ---
 layout: week
 visible: true
-visible_lec: false
-visible_n: false
+icon: undraw_cohort_analysis_stny.svg
+notitle: true
+examples:
+  - filename: prep_notebook_week02.ipynb
+    type: ipynb
+    title: Prep Notebook, Week 2
+    description: Prep notebook for this week
+  - filename: starter_notebook_for_option2_homework_week02.ipynb
+    type: ipynb
+    title: Starter notebook - HW 2
+    description: Notebook for HW 2
+  - filename: spring2019_prep_notebook_week02.ipynb
+    type: ipynb
+    title: Notebook from past class (2019)
+    description: Extra notebook from 2019 class
+data:
+  - filename: building_inventory.csv
+    type: data
+    title: Buildings dataset
+    description: Illinois buildings dataset
+  - filename: littleCorgiInHat.png
+    type: data
+    title: Corgi in Hat
+    description: Image of a corgi in a hat
+  - filename: stitch_reworked.png
+    type: dataOtherWeek
+    title: Stitch Image
+    description: Three-color image of stitch
+    week: week01
+library:
+  - filename: palette_colors.py
+    type: library
+    title: Palette Colors (palette_colors.py)
+    description: Python library, save to notebook folder or modify your path if you know how to do that
 ---
 
-# Week 4 - Types of Viz and Choosing Colors
+# Types of Viz and Choosing Colors
 
 This week, we will cover a bit about colors, and more about data transformations, and how we can
 choose colors and transforms to better suit our data.

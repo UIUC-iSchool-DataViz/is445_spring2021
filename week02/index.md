@@ -14,7 +14,7 @@ examples:
     description: Notebook for HW 2
   - filename: spring2019_prep_notebook_week02.ipynb
     type: ipynb
-    title: Extra notebook (2019)
+    title: Notebook from past class (2019)
     description: Extra notebook from 2019 class
 data:
   - filename: building_inventory.csv

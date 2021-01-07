@@ -103,6 +103,26 @@ layout: default
         {% endunless %}
         {% endfor %}
 
+        {% for example in f.library %}
+        <div class="column has-text-centered">
+            <div>
+                <p>
+                    <span class="icon is-large"><i class="fas fa-2x fa-book-open"></i></span>
+                </p>
+                <p>
+		  {% if example.type == "library" %}
+                   <a href="{{f.dir | append: example.path | append: "library/" | append: example.filename | relative_url }}">{{example.title}}</a>
+		  {% endif %}
+		  {% if example.type == "libraryOtherWeek" %}
+                   <a href="{{ "/" | append: example.week | append: "/library/" | append: example.filename | relative_url }}">{{example.title}}</a>
+		  {% endif %}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+
+
+	
         {% for example in f.data %}
         <div class="column has-text-centered">
             <div>
