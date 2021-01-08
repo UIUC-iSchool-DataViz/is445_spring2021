@@ -45,6 +45,11 @@ data:
     title: Brain Scan (72Mb)
     description: MRI scan of a brain
     link: https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/single_dicom.h5
+library:
+  - filename: palette_colors.py
+    type: library
+    title: Palette Colors (palette_colors.py)
+    description: Python library, save to notebook folder or modify your path if you know how to do that
 ---
 
 # Types of Viz and Choosing Colors

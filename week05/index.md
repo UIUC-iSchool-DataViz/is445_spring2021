@@ -1,11 +1,32 @@
 ---
 layout: week
 visible: true
-visible_lec: true
-visible_n: true
+icon: undraw_under_construction_46pa.svg
+notitle: true
+examples:
+  - filename: prep_notebook_week04.ipynb
+    type: ipynb
+    title: Prep Notebook, Week 4
+    description: Prep notebook for this week
+data:
+  - filename: ufo-scrubbed-geocoded-time-standardized-00.csv
+    type: dataLink
+    title: The UFO Sitings Dataset (13Mb)
+    description: Data about world wide reports of UFO sitings
+    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/ufo-scrubbed-geocoded-time-standardized-00.csv
+  - filename: michigan_lld.flt
+    type: dataLink
+    title: Michigan Depth Map (86Mb)
+    description: Measurments taken from around Lake Michigan
+    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/michigan_lld.flt
+  - filename: nations.json
+    type: dataLink
+    title: Wealth of Nations Data - nations.json
+    description: GDP of nations as a function of time
+    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week06/data_and_libs/nations.json
 ---
 
-# Week 6 - Continuing interactivity with bqplot
+# Continuing interactivity with bqplot
 
 Time to start talking about interactivity in more detail!
 
@@ -19,17 +40,18 @@ construction.
  * [Watch This: A Taxonomy for Dynamic Data Visualization](http://doi.org/10.1109/VAST.2012.6400552) by Cottam et al
  * [FiveThirtyEight Datasets](https://github.com/fivethirtyeight/data)
  
-## Downloads
+<!-- ## Downloads
 
 ### Data:
 
  * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/ufo-scrubbed-geocoded-time-standardized-00.csv" download>The UFO Sitings Dataset (13Mb) - ufo-scrubbed-geocoded-time-standardized-00.csv</a>
  * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/michigan_lld.flt" download>Michigan Depth Map (86Mb) - michigan_lld.flt</a>
  * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week06/data_and_libs/nations.json" download>Wealth of Nations Data - nations.json</a>
+ -->
 
 ### Resources
 
- * <a href='wealth_of_nations.py' download>Wealth of Nations Library - wealth_of_nations.py</a>
+<!-- * <a href='wealth_of_nations.py' download>Wealth of Nations Library - wealth_of_nations.py</a> -->
  * [Github pages: https://pages.github.com/](https://pages.github.com/)
 
 ## Optional Reading List
