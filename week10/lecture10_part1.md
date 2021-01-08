@@ -1,10 +1,9 @@
 ---
-title: Lecture 10
+title: Lecture 10 - Viz audience, Final Project Info
 layout: lecture
-visible_lec: true
-visible_n: true
-include_vega: true
-setup_script: setup_script.js
+description: >-
+ Considerations of audience, review about final projects, more with vega lite & Iodide, Idyll
+date: 2020-03-29
 ---
 <!-- .slide: class="titleslide" -->
 
@@ -13,7 +12,6 @@ setup_script: setup_script.js
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
 ## Lecture 10
 
 ---
