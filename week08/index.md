@@ -14,6 +14,17 @@ examples:
     title: Previous class notebook
     description: Prep Iodide Notebook, Spring 2020
     link: https://alpha.iodide.io/notebooks/4351/
+data:
+  - filename: GDP.csv
+    type: dataLink
+    title: The GDP dataset (online)
+    description: GDP dataset from FRED (stored online for easy linking in Iodide)
+    link: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/data/GDP.csv
+  - filename: GDP.csv
+    type: dataLink
+    title: The GDP dataset (online)
+    description: GDP dataset from FRED (stored online for easy linking in Iodide)
+    link: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/data/GDP.csv
 ---
 
 # Iodide and Intro to Javascript
