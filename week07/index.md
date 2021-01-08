@@ -1,7 +1,7 @@
 ---
 layout: week
 visible: true
-icon: undraw_forming_ideas_0pav.svg
+icon: undraw_Around_the_world_re_n353.svg
 notitle: true
 examples:
   - filename: prep_notebook_week07_part1.ipynb
