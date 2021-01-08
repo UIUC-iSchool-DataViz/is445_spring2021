@@ -1,9 +1,9 @@
 ---
-title: Lecture 12
+title: Lecture 12 - Publishing & Validation
 layout: lecture
-include_vega: true
-visible_lec: true
-visible_n: true
+description: >-
+ More about publishing and validation, a more of d3.js in Idyll
+date: 2020-04-12
 ---
 
 <!-- .slide: class="titleslide" -->
@@ -13,7 +13,6 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
 ## Lecture 12
 
 ---
