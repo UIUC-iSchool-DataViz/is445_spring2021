@@ -4,10 +4,19 @@ visible: true
 icon: undraw_under_construction_46pa.svg
 notitle: true
 examples:
-  - filename: prep_notebook_week04.ipynb
+  - filename: prep_notebook_week05.ipynb
     type: ipynb
-    title: Prep Notebook, Week 4
+    title: Prep Notebook, Week 5
     description: Prep notebook for this week
+  - filename: fall2019_examples_week05.ipynb
+    type: ipynb
+    title: fall2019_examples_week05.ipynb
+  - filename: spring2019_notes_week05_part1.ipynb
+    type: ipynb
+    title: spring2019_notes_week05_part1.ipynb
+  - filename: spring2019_notes_week05_part2.ipynb
+    type: ipynb
+    title: spring2019_notes_week05_part2.ipynb
 data:
   - filename: ufo-scrubbed-geocoded-time-standardized-00.csv
     type: dataLink
