@@ -85,10 +85,10 @@ layout: default
             <div class="media-content">
                 <p>
 		  {% if example.type == "library" %}
-                   <a href="{{f.dir | append: example.path | append: "library/" | append: example.filename | relative_url }}">{{example.title}}</a>
+                   <a href="{{page.dir | append: example.path | append: "library/" | append: example.filename | relative_url }}">{{example.title}}</a>
 		  {% endif %}
 		  {% if example.type == "libraryOtherWeek" %}
-                   <a href="{{ "/" | append: example.week | append: "/library/" | append: example.filename | relative_url }}">{{example.title}}</a>
+                    <a href="{{ "/" | append: example.week | append: "/library/" | append: example.filename | relative_url }}">{{example.title}}</a> 
 		  {% endif %}
                 </p>
                 <p>
@@ -107,7 +107,7 @@ layout: default
             <div class="media-content">
                 <p>
 		  {% if example.type == "data" %}
-                   <a href="{{f.dir | append: example.path | append: "data/" | append: example.filename | relative_url }}">{{example.title}}</a>
+                   <a href="{{page.dir | append: example.path | append: "data/" | append: example.filename | relative_url }}">{{example.title}}</a>
 		  {% endif %}
 		  {% if example.type == "dataOtherWeek" %}
                    <a href="{{ "/" | append: example.week | append: "/data/" | append: example.filename | relative_url }}">{{example.title}}</a>

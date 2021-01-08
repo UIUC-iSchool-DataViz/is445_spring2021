@@ -1,7 +1,7 @@
 ---
 layout: week
 visible: true
-icon: undraw_under_construction_46pa.svg
+icon: undraw_data_reports_706v.svg
 notitle: true
 examples:
   - filename: prep_notebook_week05.ipynb
