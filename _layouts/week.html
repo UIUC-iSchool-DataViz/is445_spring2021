@@ -37,8 +37,16 @@ layout: default
             </div>
         </article>
         {% endfor %}
+
+        {% assign hasEx = "NO" %}
+        {% for libs in page.examples %}
+	 {% assign hasEx = "YES" %}
+	{% endfor %}
+
 	
+        {% if hasEx == "YES" %}
         <h2 class="subtitle">Examples</h2>
+	{% endif %}
         {% for example in page.examples %}
         <article class="media">
 	  {% unless example.filename contains "2019" %}
