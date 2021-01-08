@@ -1,9 +1,9 @@
 ---
-title: Lecture 13
+title: Lecture 13 - 3D graphics, Intro to SciViz
 layout: lecture
-include_vega: true
-visible_lec: true
-visible_n: true
+description: >-
+ How your computer and the internet process 3D graphics.  What is scientific visualization?
+date: 2020-04-19
 ---
 
 <!-- .slide: class="titleslide" -->
@@ -13,7 +13,6 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
 ## Lecture 13
 
 ---
