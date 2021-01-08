@@ -1,9 +1,9 @@
 ---
-title: Lecture 11
+title: Lecture 11 - Publishing & more in Idyll
 layout: lecture
-include_vega: true
-visible_lec: true
-visible_n: true
+description: >-
+ Publishing your viz, vega-lite in Idyll and a bit of d3.js
+date: 2020-04-05
 ---
 
 <!-- .slide: class="titleslide" -->
@@ -13,7 +13,6 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
 ## Lecture 11
 
 ---

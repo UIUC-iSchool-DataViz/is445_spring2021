@@ -1,8 +1,9 @@
 ---
-title: Lecture 11, More with Vega-lite
+title: Lecture 11 extras - more with Vega-lite
 layout: lecture
-visible_lec: true
-visible_n: true
+description: >-
+ More with vega-lite
+date: 2020-04-05
 include_vega: true
 setup_script: setup_script.js
 ---
@@ -13,7 +14,6 @@ setup_script: setup_script.js
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
 ## Lecture 11, Extra Vega-lite
 
 ---
