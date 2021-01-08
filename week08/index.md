@@ -20,11 +20,11 @@ data:
     title: The GDP dataset (online)
     description: GDP dataset from FRED (stored online for easy linking in Iodide)
     link: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/data/GDP.csv
-  - filename: GDP.csv
+  - filename: mobility.csv
     type: dataLink
-    title: The GDP dataset (online)
-    description: GDP dataset from FRED (stored online for easy linking in Iodide)
-    link: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/data/GDP.csv
+    title: The Mobility dataset (online)
+    description: Census data looking at the economic mobility of different cities in the USA (stored online for easy linking in Iodide)
+    link: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_spring2021/master/week08/data/mobility.csv
 ---
 
 # Iodide and Intro to Javascript

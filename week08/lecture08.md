@@ -1,8 +1,9 @@
 ---
-title: Lecture 9
+title: Lecture 8 - Choosing viz & Online viz platforms
 layout: lecture
-visible_lec: true
-visible_n: true
+description: >-
+ Choosing what viz type to use, and an introduction to Vega/Vega-lite and Iodide 
+date: 2020-03-15
 ---
 <!-- .slide: class="titleslide" -->
 
@@ -11,8 +12,7 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
-## Lecture 9
+## Lecture 8
 
 ---
 
