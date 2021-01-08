@@ -2,7 +2,7 @@
 title: Lecture 6 - Dashboards & Maps
 layout: lecture
 description: >-
- Linking data, Maps and Map projections
+ Linking data a bit about maps (if we have time)
 date: 2020-03-01
 ---
 
