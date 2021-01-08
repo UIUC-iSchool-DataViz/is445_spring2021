@@ -1,8 +1,7 @@
 ---
-layout: week
-visible: false
-visible_lec: true
-visible_n: true
+title: Idyll Installation Instructions
+layout: assignment
+description: Install Idyll
 ---
  
 # Installation instructions: npm & Idyll & vega-lite for Idyll
@@ -54,8 +53,8 @@ npm install --save vega-lite react react-dom vega
 npm install --save idyll-vega-lite
 ```
 1. Test by:
-  * downloading [this index.idyll file](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week10/index.idyll) and replacing the default index.idyll file in your `my-idyll-post` directory
-  * downloading [the LakeHuron.csv file](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week10/LakeHuron.csv) and putting this in the `data/` sub-folder in the `my-idyll-post` directory
+  * downloading [this index.idyll file](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_spring2021/master/week10/index.idyll) and replacing the default index.idyll file in your `my-idyll-post` directory
+  * downloading [the LakeHuron.csv file](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_spring2021/master/week10/data/LakeHuron.csv) and putting this in the `data/` sub-folder in the `my-idyll-post` directory
   * do `idyll` in your `my-idyll-post` directory and make sure it looks like whats in the test video below
      * **NOTE:** if you get an error and it won't build try `idyll --compileLibs=true` instead of just `idyll`.  You might get a "BABEL" warning that you can ignore for now.
   
