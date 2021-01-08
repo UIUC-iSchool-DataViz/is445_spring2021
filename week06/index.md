@@ -31,6 +31,10 @@ data:
     type: data
     title: State export data (8Kb)
     description: Data about exports from each state
+  - filename: market_map_data.csv
+    type: data
+    title: Surgery Charges Dataset (37Mb)
+    description: Surgery charges in different states
   - filename: data_tohoku_norm_transpose.csv
     type: dataLink
     title: Earthquake sensor data (59Mb)

@@ -1,8 +1,9 @@
 ---
-title: Lecture 7
+title: Lecture 6 - Dashboards & Maps
 layout: lecture
-visible_lec: true
-visible_n: true
+description: >-
+ Linking data, Maps and Map projections
+date: 2020-03-01
 ---
 
 <!-- .slide: class="titleslide" -->
@@ -11,20 +12,11 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Fall 2020
-## Lecture 7
+## Lecture 6
 
 ---
 
-## Announcement #1: Office Hours Nov 3
-
-In accordance with the UIUC/Illinois holiday, office hours Tuesday, Nov 3 will be by appointment only (so, email me if you want to chat!).  
-
-There will be additional office hours on Thursday, Nov 5, 5-6pm.
-
----
-
-## Announcement #2: Office Hours Nov 3
+## Announcement #2: 
 
 Short *anonymous* feedback survey.
 
