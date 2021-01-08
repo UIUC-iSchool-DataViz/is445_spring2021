@@ -4,37 +4,38 @@ visible: true
 icon: undraw_cohort_analysis_stny.svg
 notitle: true
 examples:
-  - filename: prep_notebook_week02.ipynb
+  - filename: prep_notebook_week03.ipynb
     type: ipynb
-    title: Prep Notebook, Week 2
+    title: Prep Notebook, Week 3
     description: Prep notebook for this week
-  - filename: starter_notebook_for_option2_homework_week02.ipynb
+  - filename: fall2019_prep_notebook_furtherExamples_01.ipynb
     type: ipynb
-    title: Starter notebook - HW 2
-    description: Notebook for HW 2
-  - filename: spring2019_prep_notebook_week02.ipynb
+    title: fall2019_prep_notebook_furtherExamples_01.ipynb
+    description: Extra notebook from 2019 class
+  - filename: fall2019_prep_notebook_furtherExamples_02.ipynb
     type: ipynb
-    title: Notebook from past class (2019)
+    title: fall2019_prep_notebook_furtherExamples_02.ipynb
+    description: Extra notebook from 2019 class
+  - filename: fall2019_prep_notebook_furtherExamples_03.ipynb
+    type: ipynb
+    title: fall2019_prep_notebook_furtherExamples_03.ipynb
     description: Extra notebook from 2019 class
 data:
   - filename: building_inventory.csv
-    type: data
+    type: dataOtherWeek
     title: Buildings dataset
     description: Illinois buildings dataset
-  - filename: littleCorgiInHat.png
-    type: data
-    title: Corgi in Hat
-    description: Image of a corgi in a hat
-  - filename: stitch_reworked.png
-    type: dataOtherWeek
-    title: Stitch Image
-    description: Three-color image of stitch
-    week: week01
-library:
-  - filename: palette_colors.py
-    type: library
-    title: Palette Colors (palette_colors.py)
-    description: Python library, save to notebook folder or modify your path if you know how to do that
+    week: week02
+  - filename: michigan_lld.flt
+    type: dataLink
+    title: Michigan Depth Map (86Mb)
+    description: Measurments taken from around Lake Michigan
+    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/michigan_lld.flt
+  - filename: single_dicom.h5
+    type: dataLink
+    title: Brain Scan (72Mb)
+    description: MRI scan of a brain
+    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/single_dicom.h5
 ---
 
 # Types of Viz and Choosing Colors
@@ -46,19 +47,21 @@ We also did some basics of Pandas last week and we'll continue this week.
 
 Note there are a variety of notebooks from previous iterations of this course listed under the *Materials* subsection of today's lecture.  The "furtherExamples" notebooks are just there as reference, we will not be going through them by hand.
 
-## Downloads
+<!-- ## Downloads
 
 ### Data:
 
  * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week02/building_inventory.csv" download>Building Inventory CSV file - building_inventory.csv</a>
  * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/michigan_lld.flt" download>Michigan Depth Map (86Mb) - michigan_lld.flt</a>
  * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/single_dicom.h5" download>Brain Scan (72Mb) - single_dicom.h5</a>
+ -->
 
-### Python external libraries
+<!-- ### Python external libraries
 
 Make sure you save these in the same directory as your jupyter notebook is running in!
 
  * <a href="palette_colors.py" download>Palette Colors (palette_colors.py) - save to notebook folder or modify your path if you know how to do that</a>
+ -->
 
 
 ## References

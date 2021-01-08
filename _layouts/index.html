@@ -136,6 +136,9 @@ layout: default
 		  {% if example.type == "dataOtherWeek" %}
                    <a href="{{ "/" | append: example.week | append: "/data/" | append: example.filename | relative_url }}">{{example.title}}</a>
 		  {% endif %}
+		  {% if example.type == "dataLink" %}
+                   <a href="{{example.link }}">{{example.title}}</a>
+		  {% endif %}
 		   
                 </p>
             </div>
