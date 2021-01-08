@@ -24,6 +24,11 @@ data:
     title: Wealth of Nations Data - nations.json
     description: GDP of nations as a function of time
     link: https://uiuc-ischool-dataviz.github.io/spring2019online/week06/data_and_libs/nations.json
+library:
+  - filename: wealth_of_nations.py
+    type: library
+    title: Wealth of Nations Library (wealth_of_nations.py)
+    description: Python library, save to notebook folder or modify your path if you know how to do that
 ---
 
 # Continuing interactivity with bqplot
