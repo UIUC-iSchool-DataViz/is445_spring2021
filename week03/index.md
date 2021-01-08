@@ -20,6 +20,15 @@ examples:
     type: ipynb
     title: fall2019_prep_notebook_furtherExamples_03.ipynb
     description: Extra notebook from 2019 class
+  - filename: spring2019_prep_notebook_furtherExamples_week03.ipynb
+    type: ipynb
+    title: spring2019_prep_notebook_furtherExamples_week03.ipynb
+  - filename: spring2019_prep_notebook_week03_part1.ipynb
+    type: ipynb
+    title: spring2019_prep_notebook_week03_part1.ipynb
+  - filename: spring2019_prep_notebook_week03_part2.ipynb
+    type: ipynb
+    title: spring2019_prep_notebook_week03_part2.ipynb
 data:
   - filename: building_inventory.csv
     type: dataOtherWeek

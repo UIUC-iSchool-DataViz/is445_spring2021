@@ -1,8 +1,9 @@
 ---
-title: Lecture 3, Week 4 - let's call it Lecture 4!
+title: Lecture 2 - Colors and Color maps, Types of viz
 layout: lecture
-visible_lec: true
-visible_n: true
+description: >-
+ How do colors work? What are the different ways we can map colors to values? What should we keep in mind when doing this?
+date: 2020-02-08
 ---
 <!-- .slide: class="titleslide" -->
 
@@ -11,7 +12,7 @@ visible_n: true
 
 ## Jill P Naiman
 ## Fall 2020
-## Lecture 4
+## Lecture 3
 
 ---
 
