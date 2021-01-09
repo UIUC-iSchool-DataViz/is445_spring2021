@@ -1,10 +1,6 @@
 ---
 title: Lecture 1 - Class Introduction & Why we Visualize
 layout: lecture
-tags:
-  - overview
-  - concepts
-  - brain
 description: >-
   The syllabus for the course, along with discussions about "what"
   visualizations are, and how to orient yourself in the course.
@@ -497,7 +493,7 @@ feedback.  However, please do behave in a professional fashion.
 
 ## Github
 
- * Course repo is at [UIUC-iSchool-DataViz/is445_spring2021](https://github.com/UIUC-iSchool-DataViz/is445_spring2021/)
+ * Course repo is at [UIUC-iSchool-DataViz/is445_spring2021/](https://github.com/UIUC-iSchool-DataViz/is445_spring2021/)
  * Automatically built to [uiuc-ischool-dataviz.github.io/is445_spring2021/](https://uiuc-ischool-dataviz.github.io/is445_spring2021/)
  * Copy the notebooks to your directory before using them.
  * Supplemental materials can be found at [UIUC-iSchool-DataViz/support-files](https://github.com/UIUC-iSchool-DataViz/support-files)

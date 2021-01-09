@@ -1,10 +1,6 @@
 ---
 title: Lecture 2 - Data storage & Operations, Image data
 layout: lecture
-tags:
-  - overview
-  - concepts
-  - brain
 description: >-
  When we draw something on a screen, how do we represent that internally, and how is that translated into pixels? How are values transformed from 0's and 1's into values we can manipulate and understand?
 date: 2020-02-01
@@ -15,7 +11,6 @@ date: 2020-02-01
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2021
 ## Lecture 2
 
 ---
@@ -31,12 +26,10 @@ date: 2020-02-01
 ## How to get help
 
 Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: Tuesday 5-6pm, Mondays 8-9pm after class; other times by request
+ * Office Hours: TBD; other times by request
 
-TA: Diptendra Bagchi, `dbagchi2@illinois.edu`
- * Office Hours: Monday/Thursday 11am-12pm
-
-https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/
+TA: TBD
+ * Office Hours: TBD
 
 ---
 
@@ -44,9 +37,9 @@ https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/
 
  * Moodle - where the grades and assignments will be posted
 
- * Course webpage: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/ - where lecture slides, notebooks, data & general course info will live.
+ * Course webpage: https://uiuc-ischool-dataviz.github.io/is445_spring2021/ - where lecture slides, notebooks, data & general course info will live.
 
- * Slack: https://is445-fall2020.slack.com - the best place to ask questions
+ * Slack: https://is445-spring2021.slack.com - the best place to ask questions
 
 ---
 
@@ -119,7 +112,8 @@ There are 3 pathways (that I can see in this course, could be more!)
 
 ## Many ways to get notes
 
- 1. The course website, last I taught it - https://uiuc-ischool-dataviz.github.io/spring2020/
+ 1. The course website, last I taught it - https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/
+ 1. The course website, Spring 2020 - https://uiuc-ischool-dataviz.github.io/spring2020/
  1. The course website, Fall 2019 - https://uiuc-ischool-dataviz.github.io/fall2019/
 
 ---
