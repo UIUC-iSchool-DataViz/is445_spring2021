@@ -19,7 +19,7 @@ date: 2020-04-12
 
 ## Last Week
 
-<img src="../week10/images/this_week2.png">
+<img src="../week11/images/this_week2.png">
 
 notes:
 so far, we've been covering a bit of javascript and vega-lite as some new viz engines and using them in Idyll

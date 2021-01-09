@@ -18,7 +18,7 @@ date: 2020-03-29
 
 ## Last Week
 
-<img src="../week09/images/this_week2.png">
+<img src="../week08/images/this_week2.png">
 
 ---
 

@@ -19,7 +19,7 @@ date: 2020-04-05
 
 ## This Week/Last Week
 
-<img src='../week10/images/this_week2.png'>
+<img src='images/this_week2.png'>
 
 notes:
 
@@ -100,7 +100,7 @@ Cons:
  * Not well-documented
  * open source means less guarantee of long-term support in the future
 
-<img src="../week10/images/idyll.png" width="200"/>
+<img src="../week08/images/idyll.png" width="200"/>
 
 
 
