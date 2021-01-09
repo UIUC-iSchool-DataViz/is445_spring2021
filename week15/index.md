@@ -15,6 +15,21 @@ examples:
   - filename: spring2019_prep_notebook.ipynb
     type: ipynb
     title: Examples from Spring 2019
+data:
+  - filename: othello.txt
+    type: data
+    title: Text corpus from Othello
+    description: Full text from the play Othello from project Guthenburg
+  - filename: facebook_combined_sm000090_000010.txt
+    type: dataLink
+    title: Broad facebook data
+    description: Several small nodes facebook data
+    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week09/data/facebook_combined_sm000090_000010.txt
+  - filename: facebook_combined_sm000030_000000.txt
+    type: dataLink
+    title: Major node data
+    description: One major node facebook data
+    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week09/data/facebook_combined_sm000030_000000.txt
 ---
 
 # Network Visualization & Word clouds
@@ -43,6 +58,7 @@ Final class, you made it!
 
 ## Extra Resources
 
+ * <a href='https://github.com/UIUC-iSchool-DataViz/spring2019online/tree/master/week09/data'>More facebook data</a>
  * <a href='https://snap.stanford.edu/data/'>Variety of SNAP datasets</a>
  * <a href='https://snap.stanford.edu/data/ego-Facebook.html'>We used this SNAP dataset</a>
  * <a href='https://github.com/jcatw/snap-facebook'>Python Library to parse snap facebook data</a>
