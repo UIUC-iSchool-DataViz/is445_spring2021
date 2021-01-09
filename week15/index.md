@@ -1,12 +1,27 @@
 ---
 layout: week
 visible: true
-visible_lec: true
-visible_n: true
+icon: undraw_medical_research_qg4d.svg
+notitle: true
+examples:
+  - filename: prep_notebook_wordcloud_part1.ipynb
+    type: ipynb
+    title: Prep Notebook, Week 15, Part 1
+    description: Prep notebook for this week, Part 1 - WordClouds
+  - filename: prep_notebook_networks_part2.ipynb
+    type: ipynb
+    title: Prep Notebook, Week 15, Part 2
+    description: Prep notebook for this week, Part 2 - Network data
+  - filename: spring2019_prep_notebook.ipynb
+    type: ipynb
+    title: Examples from Spring 2019
 ---
 
-# Week 16 - Network Visualization & Word clouds
+# Network Visualization & Word clouds
 
+Final class, you made it!
+
+<!--
 ## Downloads
 
 ### Data:
@@ -15,6 +30,7 @@ visible_n: true
  * <a href='https://uiuc-ischool-dataviz.github.io/spring2019online/week09/data/facebook_combined_sm000030_000000.txt' download>One major node facebook data</a>
  * <a href='https://github.com/UIUC-iSchool-DataViz/spring2019online/tree/master/week09/data'>More facebook data</a>
  * <a href="othello.txt" download>Text of Othello (othello.txt)</a>
+-->
 
 ## Optional reading list
 
