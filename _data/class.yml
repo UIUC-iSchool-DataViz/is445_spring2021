@@ -2,13 +2,13 @@ instructor:
   name: Jill Naiman
   email: jnaiman@illinois.edu
   office: Online!
-  office_hours: TBD & By appointment
+  office_hours: Thurs 2-3pm & By appointment
 tas:
   -
-    name: Clair Irwin
-    email: ceflynn2@illinois.edu
+    name: Qiuyan Guo
+    email: qqguo2@illinois.edu
     office: Online!
-    office_hours: TBD
+    office_hours: Tues & Wed 2-3pm
 course:
   name: Data Visualization
   number: IS445
@@ -20,10 +20,10 @@ course:
 urls:
   -
     name: Slack
-    url: TBD
+    url: is445-spring2021.slack.com
   - 
     name: Moodle
-    url: TBD
+    url: https://learn.illinois.edu/course/view.php?id=55636
   -
     name: Course Materials
     url: https://uiuc-ischool-dataviz.github.io/is445_spring2021/
