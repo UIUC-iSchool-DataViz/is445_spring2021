@@ -12,6 +12,10 @@ examples:
     type: ipynb
     title: Import notebook for HW 1
     description: Notebook for HW 1
+  - filename: inClass_week01.ipynb
+    type: ipynb
+    title: In class week 1 notebook
+    description: Intro to python, plotting
 data:
   - filename: GDP.csv
     type: data
