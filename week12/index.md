@@ -87,5 +87,6 @@ This dataset is from the [Cardigan Archives](http://cardiped.net/) and [scraped 
 ## Optional reading list
 
  1. <a href="https://idyll-lang.org/docs"> Idyll Docs</a>
+ 1. <a href="https://books.google.com/books?hl=en&lr=&id=jUw7DwAAQBAJ&oi=fnd&pg=PA91&dq=scientific+visualization+misinformation&ots=Cv0QmoCdM2&sig=7xycURu8Um_C9VtHqf-aWg4qaEo#v=onepage&q=scientific%20visualization%20misinformation&f=false">Chapter 5: Dimensions of Visual Misinformation in the Emerging Media Landscape in the book "Misinformation and Mass Audiences"</a>
 
  
