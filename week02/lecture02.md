@@ -5,15 +5,6 @@ description: >-
  When we draw something on a screen, how do we represent that internally, and how is that translated into pixels? How are values transformed from 0's and 1's into values we can manipulate and understand?
 date: 2020-02-01
 ---
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 2
-
----
 
 <br>
 <br>
@@ -26,10 +17,13 @@ date: 2020-02-01
 ## How to get help
 
 Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: TBD; other times by request
+ * Office Hours: Thurs 2-3pm; other times by request
 
-TA: TBD
- * Office Hours: TBD
+TA: Qiuyan Guo
+ * Office Hours: Tues & Wed 2-3pm
+ 
+Other: 
+ * Slack, email
 
 ---
 
@@ -46,6 +40,8 @@ TA: TBD
 ## An addition: jupyterhub
 
 [http://jupyterhub.ischool.illinois.edu/](http://jupyterhub.ischool.illinois.edu/)
+
+(linked on Moodle)
 
 notes:
 this may not have all the right packages however
@@ -855,6 +851,8 @@ keep in mind, compression algorithms can make these comparisons a little fuzzier
 notes:
 in this image, all the lines ARE less than 40 pixels
 
+so, in this case raster is less memory than vector
+
 ---
 
 ## Representations
@@ -998,6 +996,114 @@ Which of these are better represented as raster or vector?
 notes:
 a simple cheat is anytime you see the word "density", it's easier to represent with raster.
 
+---
+
+## Vector vs. Raster in 3D: Raster or Vector?
+
+<img src="images/menger1.png" width=700>
+
+Vector points: 8 points $\rightarrow$ number of "verticies" to make a cube
+
+Stored as voxels (volumetric pixels): 2.96 kb $\rightarrow$ if we break the cube up into little cubes
+
+notes:
+Would it be easier to store this cube as a vector or as raster?
+This is larger than a few bytes because it's storing other useful values in CG software.
+
+---
+
+## Raster or Vector?
+
+<img src="images/menger2.png" width=700>
+
+Vector points: 160 points
+
+Stored as voxels (volumetric pixels): 12.28 kb
+
+notes:
+Does this change it?
+This is a recursive shape known as a Menger Sponge. Each cube keeps getting replaced with the whole previous shape.
+
+---
+
+## Raster or Vector?
+
+<img src="images/menger3.png" width=700>
+
+Vector points: 3200 points
+
+Stored as voxels (volumetric pixels): 445.05 kb
+
+notes:
+
+
+---
+
+## Raster or Vector?
+
+<img src="images/menger4.png" width=700>
+
+Vector points: 64000 points
+
+Stored as voxels (volumetric pixels): 9.59Mb
+
+notes:
+Does it make a difference yet?
+
+---
+
+## Raster or Vector?
+
+<img src="images/menger5.png" width=700>
+
+Vector points: 1.28M points
+
+Stored as voxels (volumetric pixels): 190.93 Mb
+
+notes:
+
+
+---
+
+## Raster or Vector?
+
+<img src="images/menger6.png" width=700>
+
+Vector points: 25.6M points
+
+Stored as voxels: 3.73 Gb
+
+notes:
+
+
+---
+
+## Raster or Vector?
+
+<img src="images/menger6.png" width=700>
+
+Vector points: 25.6M points
+
+Stored as voxels: 3.73 Gb
+
+Size of this image: 1280 x 720 = 921600
+
+notes:
+There are 25 times more points than pixels, and most of the pixels don't include the shape - we aren't
+seeing the details of this image anymore
+
+
+---
+
+## Infinite resolution
+
+![](images/nature.jpg)
+
+notes:
+nature has nearly infinite resolution, down to the atom.
+It's much easier to discretize this scene to the level of pixels than to try to use vector shapes to describe everything happening in the photo.
+
+photo by  Ekaterina Vasyagina
 
 ---
 
