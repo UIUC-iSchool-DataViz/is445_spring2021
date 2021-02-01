@@ -6,7 +6,7 @@ tags:
   - concepts
   - brain
 description: >-
- More examples of drawing images in 2D and 3D; binary representations 
+ More examples of drawing images in 2D; binary representations 
 date: 2020-02-01
 ---
 <!-- .slide: class="titleslide" -->
