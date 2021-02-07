@@ -172,13 +172,13 @@ Similarly for categorical data like with an organization, network, or a tree -- 
 
 <div class="left">
 
-<img src="http://serialmentor.com/dataviz/aesthetic_mapping_files/figure-html/temp-normals-vs-time-1.png" width="400px">
+<img src="https://clauswilke.com/dataviz/aesthetic_mapping_files/figure-html/temp-normals-vs-time-1.png" width="400px">
 
 </div>
 
 <div class="right">
 
-<img src="http://serialmentor.com/dataviz/coordinate_systems_axes_files/figure-html/temperature-normals-polar-1.png" width="400px">
+<img src="https://clauswilke.com/dataviz/coordinate_systems_axes_files/figure-html/temperature-normals-polar-1.png" width="400px">
 
 </div>
 

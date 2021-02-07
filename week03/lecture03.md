@@ -5,16 +5,6 @@ description: >-
  How do colors work? What are the different ways we can map colors to values? What should we keep in mind when doing this?
 date: 2020-02-08
 ---
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-<div style="height: 6.0em;"></div>
-
-## Jill P Naiman
-## Fall 2020
-## Lecture 3
-
----
 
 ## Warm-Up Activity -- Thinking about Colors
 
