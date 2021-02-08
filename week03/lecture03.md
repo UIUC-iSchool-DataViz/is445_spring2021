@@ -594,6 +594,10 @@ https://gizmodo.com/if-the-color-pink-doesnt-scientifically-exist-why-can-146426
 notes:
 just a point of interest, what wavelength would you say magenta (or purple) is?
 
+(spoiler alert: its basically R all the way on, and then G & B part on so its red + white)
+
+Also talks about CMYK -- mixes light, RGB is mixing pigments
+
 ---
 
 ## Palette Mapping
@@ -693,6 +697,27 @@ trianopia = no blue
 ## Color Blindness
 
 http://enchroma.com/test/instructions/
+
+---
+
+
+## Color Blindness - But wait!
+
+http://enchroma.com/test/instructions/
+
+There's more: https://nakeddata.org/2021/01/22/accessible-data-visualisation-beyond-colour-blindness/
+
+Frank Elavksy (Staff Data Visualization Engineer + Designer on the Data Visualization team at Visa Inc.):
+ * High contrast text
+ * High contrast elements
+ * Using texture, shape, units
+ * Designing with zoom/magnification
+ * Using Hierarchy and Focus
+ * Using annotations or guides
+
+notes: the focus on colorblindness in data visualization is at the expense of much more prevalent considerations like designing for low-vision folks
+
+Elvansky suggests these other considerations are also extremely important to consider for folks that are visually impaired, a much larger portion of the population than those with colorblindness that are often ignored
 
 ---
 
