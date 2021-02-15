@@ -5,16 +5,6 @@ description: >-
  We talk about the basics of using Traitlets and data binding in visualization.
 date: 2020-02-15
 ---
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-<div style="height: 6.0em;"></div>
-
-## Jill P Naiman
-## Spring 2021
-## Lecture 4
-
----
 
 ## Today's Main Topics
 
