@@ -26,7 +26,7 @@
             font-size: 2em;
             color: rgb(108, 108, 108);
             text-align: center;
-            padding-top: 10%;
+            padding-top: 0%;
             margin: 0 auto;
         }
         div#instructions small {
@@ -81,10 +81,12 @@
 
 <div id='doc'>
     <select id='file-selector'></select>
-    <button id='download-notebook'>Download this notebook in HTML</button>
-    <div id='instructions'>Drag and drop Jupyter notebooks anywhere here...<br />
-    or paste a link from Github: <br />
-    <input id='github-link' placeholder='https://github.com/...'/>
+    <!--<button id='download-notebook'>Download this notebook in HTML</button>-->
+    <button id='download-notebook'></button>
+    <div id='instructions'>
+    <!--<div id='instructions'>Drag and drop Jupyter notebooks anywhere here...<br />
+    or paste a link from Github: <br />-->
+    <!--<input id='github-link' placeholder='https://github.com/...'/>-->
     </div>
 
     <div id='serving-info'></div>
@@ -159,8 +161,9 @@
 
     dz.addEventListener('dragenter', dzenter, false);
     dz.addEventListener('dragover', dzover, false);
-  dz.addEventListener('drop', dzdrop, false);
+    dz.addEventListener('drop', dzdrop, false);
 
+  // Matt's nbviewer:
 
   var urlParams;
 (window.onpopstate = function () {
@@ -198,6 +201,8 @@
     console.log("connection error");
   };
   request.send();
+
+  // end Matt's nbviewer
 
     function dzenter(e) {
         e.stopPropagation()
@@ -272,21 +277,21 @@
     }
 
     // github rendering shenanigans
-    var ghl = document.getElementById('github-link')
+    // var ghl = document.getElementById('github-link')
 
-    ghl.addEventListener('keyup', (x) => {
-        // TODO: verify the link via regexp or something
-        // and change the input's css accordingly (red border)
-        window.location.hash = btoa(ghl.value);
-        render_gh_files()
-    })
+    //ghl.addEventListener('keyup', (x) => {
+    //    // TODO: verify the link via regexp or something
+    //    // and change the input's css accordingly (red border)
+    //    window.location.hash = btoa(ghl.value);
+    //    render_gh_files()
+    //})
 
     // what if we loaded a site with a hash already
-    if (window.location.hash.length > 1) {
-        ghl.value = atob(window.location.hash.slice(1))
-        var event = new CustomEvent('keyup')
-        ghl.dispatchEvent(event)
-    }
+    //if (window.location.hash.length > 1) {
+    //    ghl.value = atob(window.location.hash.slice(1))
+    //    var event = new CustomEvent('keyup')
+    //    ghl.dispatchEvent(event)
+    //}
 
     // `atob` won't decode utf8 characters correctly, we need to do more about this
     // taken from this excellent answer https://stackoverflow.com/a/30106551
