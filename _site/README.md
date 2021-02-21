@@ -11,8 +11,7 @@ Lectures can utilize the layout `lecture`, which will present them in revealjs.
 
 ## Notes on Course Materials
 
-As of Fall 2020, this section and the [section developed in parallel by Jill
-Naiman](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/) have
+As of Fall 2020, this section and the [section developed in parallel by Matthew Turk](https://github.com/UIUC-iSchool-DataViz/fall2020-BOG-BOU) have
 diverged somewhat.  Occasionally, contributions will be passed back and forth
 and the commit message history may not reflect the original authorship.
 
