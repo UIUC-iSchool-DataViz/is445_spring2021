@@ -5,15 +5,6 @@ description: >-
  We introduce the basics of bqplot & how it relates to grammar of graphics
 date: 2020-02-22
 ---
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 5
-
----
 
 ## Today's Main Topics
 
