@@ -6,19 +6,12 @@ description: >-
 date: 2020-03-01
 ---
 
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 6
-
----
-
-## Announcement #2: 
+## Announcement: 
 
 Short *anonymous* feedback survey.
+
+notes:
+*unhide the survey!*
 
 ---
 
@@ -215,6 +208,7 @@ note: this is how this dataset looks now w/o the shortest duration ufo sitings
 <iframe width="1024" height="576"
 src="https://www.youtube.com/embed/B7XoW2qiFUA?rel=0" frameborder="0"
 allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 [Link to video](https://www.youtube.com/embed/B7XoW2qiFUA)
 
 note: here is one of the first examples of a "linked view" visualization machine.  We won't watch this whole video, but
@@ -224,6 +218,8 @@ this was developed by SLAC (stanford linear accelerator)
 
 prim9 = picturing, rotation, isolation & masking in up to 9 dimensions - for looking at multidimensional datasets
 this was developed for particle data (so, like x,y,z and vx,vy,vz might be of interest)
+
+*pause recording here!*
 
 ---
 
@@ -241,6 +237,11 @@ What are methods of showing "linked" and "brushed" data if you have:
  * Scatter plot
  * Histogram
  * Field / image plot
+
+notes: 
+hint -- we already discussed index based last class with the grid heatmap and the histogram plots
+
+and we've done masking before with the filtering of images
 
 ---
 
@@ -268,6 +269,9 @@ Build a dashboard for the buildings data.
  * Things to think about:
     * Can you keep the x and y ranges static on the line plot?
     * Can you change the style?
+	
+notes:
+Hint for those in class -- check out pivot tables with pandas, it might get you close to where you want to be with filtering your data!
 
 ---
 
