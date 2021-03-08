@@ -6,16 +6,6 @@ description: >-
 date: 2020-03-08
 ---
 
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 7
-
----
-
 # Homework 
 
 This week: Installations & trying some web interfaces out
@@ -28,12 +18,18 @@ There are 2 homeworks.  Like the last #5 & #6 you might want to get looking at #
 
 ---
 
+# Reminder: "Temperature Taking" Quiz
+
+notes: talk about updates here!
+
+---
+
 ## Where we are: Last week
 
 <img src="images/dataviz_lastweek_t2.png">
 
 notes:
-last week we messed a bit with mappable data and made some interactive dashboards
+last week we messed around a bit with mappable data and made some interactive dashboards
 
 ---
 
@@ -260,6 +256,8 @@ another?
 notes:
 after watching this, it's useful to know that the Peters projection is actually flawed as a teaching tool because of how much it distorts the shapes of countries near the poles.
 
+**pause recording!**
+
 ---
 
 ## Discussion
@@ -268,6 +266,8 @@ after watching this, it's useful to know that the Peters projection is actually 
 
 notes:
 Let's go see what Greenland actually looks like ...
+
+**did you remember to turn back on the recording??**
 
 ---
 
@@ -427,7 +427,7 @@ If we have time, we'll go into those, but if not, they are in the extra prep not
 
 ## Geopandas
 
-<img src="https://geopandas.org/_images/sphx_glr_create_geopandas_from_pandas_001.png">
+<img src="https://geopandas.readthedocs.io/en/v0.4.0/_images/sphx_glr_create_geopandas_from_pandas_001.png">
 
 notes:
 the calls for geopandas is going to look very similar to pandas calls!
@@ -467,7 +467,7 @@ we'll just touch on a few data sources, and you'll have the opportunity to explo
 
 ## Geopandas + contextily
 
-<img src="https://geopandas.org/_images/sphx_glr_plotting_basemap_background_002.png" width='500px'>
+<img src="https://geopandas.readthedocs.io/en/v0.9.0/_images/gallery_plotting_basemap_background_8_0.png" width='500px'>
 
 notes:
 we'll also play around with using contextily to add backgrounds to maps
