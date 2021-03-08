@@ -32,9 +32,10 @@ data:
     description: Data about world wide reports of UFO sitings
     link: https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/ufo-scrubbed-geocoded-time-standardized-00.csv
   - filename: total_export.csv
-    type: data
+    type: dataLink
     title: State export data (8Kb)
     description: Data about exports from each state
+	link: https://uiuc-ischool-dataviz.github.io/is445_spring2021/week06/data/total_export.csv
   - filename: market_map_data.csv
     type: data
     title: Surgery Charges Dataset (37Mb)
