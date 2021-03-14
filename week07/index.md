@@ -6,8 +6,8 @@ notitle: true
 examples:
   - filename: inClass_week07.ipynb
     type: ipynb
-    title: In-class notebook
-    description: Placeholder for in class coding.
+    title: In class notebook
+    description: Placeholder for in class coding
   - filename: prep_notebook_week07_part1.ipynb
     type: ipynb
     title: Prep Notebook, Week 7, Part 1
@@ -15,7 +15,7 @@ examples:
   - filename: prep_notebook_week07_part2.ipynb
     type: ipynb
     title: Prep Notebook, Week 7, Part 2
-    description: Prep notebook for this week, Part 2
+    description:  Prep notebook for this week, Part 2
   - filename: spring2019_prep_notebook_week07_part1.ipynb
     type: ipynb
     title: spring2019_prep_notebook_week07_part1.ipynb
@@ -26,65 +26,49 @@ examples:
     type: ipynb
     title: spring2019_prep_notebook_week07_part3.ipynb
 data:
-  - filename: ufo-scrubbed-geocoded-time-standardized-00.csv
+  - filename: GDP.csv
     type: dataLink
-    title: The UFO Sitings Dataset (13Mb)
-    description: Data about world wide reports of UFO sitings
-    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/ufo-scrubbed-geocoded-time-standardized-00.csv
-  - filename: total_export.csv
+    title: The GDP dataset (online)
+    description: GDP dataset from FRED (stored online for easy linking in Iodide)
+    link: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/data/GDP.csv
+  - filename: GDP.csv
     type: dataLink
-    title: State export data (8Kb)
-    description: Data about exports from each state
-	link: https://uiuc-ischool-dataviz.github.io/is445_spring2021/week06/data/total_export.csv
-  - filename: market_map_data.csv
-    type: data
-    title: Surgery Charges Dataset (37Mb)
-    description: Surgery charges in different states
-  - filename: data_tohoku_norm_transpose.csv
+    title: The GDP dataset (online)
+    description: GDP dataset from FRED (stored online for easy linking in Iodide)
+    link: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/data/GDP.csv
+  - filename: mobility.csv
     type: dataLink
-    title: Earthquake sensor data (59Mb)
-    description: Earthquake sensor data from the earthquake from the Tohoku earthquake in 2011
-    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week08/data/data_tohoku_norm_transpose.csv
-  - filename: location.txt
-    type: dataLink
-    title: Earthquake locations data (12Kb)
-    description: Locations of earthquake sensors
-    link: https://uiuc-ischool-dataviz.github.io/spring2019online/week08/data/location.txt
-library:
-  - filename: states_utils.py
-    type: library
-    title: State export utilities (states_utils.py)
-    description: Python library, save to notebook folder or modify your path if you know how to do that
-  - filename: us_state_abbrev.py
-    type: library
-    title: US State abbreviations (us_state_abbrev.py)
-    description: Python library, save to notebook folder or modify your path if you know how to do that
+    title: The Mobility dataset (online)
+    description: A dataset of USA "mobility" which (I <b>think</b> comes from a <a href="https://www.census.gov/library/working-papers/2018/adrm/CES-WP-18-40R.html">a large census study from 1989-2015</a>) and is collected in several places <a href="http://www.stat.cmu.edu/~cshalizi/uADA/15/hw/01/mobility.csv">including right here</a>.  Here "mobility" is refering to how easy it is for a person to move up in economic status (<a href="http://www.stat.cmu.edu/~cshalizi/uADA/15/hw/01/hw-01.pdf">more info can be found here</a>) based on factors like parental income, location, race, etc.
+    link: https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_spring2021/master/week08/data/mobility.csv
 ---
 
-# Maps, maps and more maps
+# Iodide and Intro to Javascript
 
-We will start thinking about maps & map projection, both in `bqplot` and `matplotlib` and with `geopandas`+`contextily`.  We'll continue this week with building dashboards of mappable data.
+Using Iodide to publish in Python and an introduction to Javascript.
 
-<!-- ## Downloads
+<!--
+## Downloads & Links
 
-### Data:
+### Iodide Notebooks:
 
- * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/ufo-scrubbed-geocoded-time-standardized-00.csv" download>The UFO Sitings Dataset (13Mb) - ufo-scrubbed-geocoded-time-standardized-00.csv</a>
- * <a href='total_export.csv' download>State export data (8Kb) - total_export.csv</a>
- * <a href="market_map_data.csv" download>Backup: Surgery Charges Dataset (37Mb) - market_map_data.csv</a>
- * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week08/data/data_tohoku_norm_transpose.csv" download>Earthquake sensor data (59Mb) - data_tohoku_norm_transpose.csv</a>
- * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week08/data/location.txt" download>Earthquake locations data (12Kb) - location.txt</a>
+ * <a href="https://alpha.iodide.io/notebooks/4351/">Prep Iodide Notebook</a>
+ * <a href="https://alpha.iodide.io/notebooks/6120/">In Class Iodide Notebook</a> 
 
-
-### Resources:
-
- * <a href='states_utils.py' download>State export utilities (Python library) - states_utils.py</a>
- * <a href='us_state_abbrev.py' download>US State abbreviations (Python library) - us_state_abbrev.py</a>
+Feel free to check out [Spring 2020's notebook that uses police shooting data for visualization](https://alpha.iodide.io/notebooks/4351/) if you are interestedin other mappable datasets.  
 -->
+
+**NOTE**: For Python, only a subset of libraries are supported. See ongoing list [here](https://github.com/iodide-project/pyodide/tree/master/packages).
 
 ## Optional reading list
 
- 1. VAD Ch. 8.1-8.3: Arrange Spatial Data 
- 2. <a href="https://serialmentor.com/dataviz/geospatial-data.html">FDV, Ch. 15: Visualizing geospatial data</a> 
- 3. VAD, Ch. 13.4.2: Reduce Items and Attributes 
- 4. <a href="https://scitools.org.uk/cartopy/docs/latest/">Cartopy docs</a>; <a href="https://ipyleaflet.readthedocs.io/en/latest/">ipyleaflet docs</a>; <a href="https://geopandas.org/">Geopandas Docs</a>
+ 1. <a href="https://alpha.iodide.io/">Iodide Docs</a> - in particular: <a href="https://iodide-project.github.io/docs/key_concepts/">key concepts</a> & <a href="https://iodide-project.github.io/docs/iomd/">IOMD format</a> 
+ 2. <a href="https://www.codecademy.com/learn/introduction-to-javascript">Intro to Javascript</a> 
+ 3. <a href="https://serialmentor.com/dataviz/directory-of-visualizations.html">FDV, Ch. 5: Directory of visualizations</a>
+
+## Extra Resources
+ * [FiveThirtyEight](https://fivethirtyeight.com/)
+ * [FiveThirtyEight datasets](https://github.com/fivethirtyeight/data)
+ * [jsdelivr](https://www.jsdelivr.com/)
+ * [vega-datasets](https://github.com/vega/vega-datasets/tree/master/data)
+ 
