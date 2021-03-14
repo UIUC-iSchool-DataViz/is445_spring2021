@@ -5,16 +5,6 @@ description: >-
  Choosing what viz type to use, and an introduction to Vega/Vega-lite and Iodide 
 date: 2020-03-15
 ---
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 8
-
----
 
 ## Last Week
 

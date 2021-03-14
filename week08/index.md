@@ -8,7 +8,7 @@ examples:
     type: iodide
     title: Prep Iodide Notebook, Week 8
     description: Prep Iodide Notebook
-    link: https://alpha.iodide.io/notebooks/6114/
+    link: https://alpha.iodide.io/notebooks/7112/
   - filename: prep_notebook_week10
     type: iodidePast
     title: Previous class notebook
