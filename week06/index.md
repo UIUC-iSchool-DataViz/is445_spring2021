@@ -27,10 +27,6 @@ data:
     title: The UFO Sitings Dataset (13Mb)
     description: Data about world wide reports of UFO sitings
     link: https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/ufo-scrubbed-geocoded-time-standardized-00.csv
-  - filename: total_export.csv
-    type: data
-    title: State export data (8Kb)
-    description: Data about exports from each state
   - filename: market_map_data.csv
     type: data
     title: Surgery Charges Dataset (37Mb)
