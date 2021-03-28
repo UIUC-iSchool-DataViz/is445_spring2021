@@ -5,16 +5,6 @@ description: >-
  Considerations of audience, review about final projects, more with vega lite & Iodide, Idyll
 date: 2020-03-29
 ---
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 10
-
----
 
 ## Last Week
 
@@ -506,9 +496,9 @@ There are three components, turned in the last three weeks of class.
 
 You will have three components:
 
-1. Viz for Self (Due November 16)
-1. Viz for Peers (Due November 30)
-1. Viz for Others (Due December 7, 18)
+1. Viz for Self (Due April 19)
+1. Viz for Peers (Due April 26)
+1. Viz for Others (Due May 3 (for feedback), 14 (final))
 
 ---
 
