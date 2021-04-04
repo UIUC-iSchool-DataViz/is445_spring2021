@@ -15,13 +15,7 @@
 
 ## Introduction
 
-This is an Idyll post. It is generated via
-the file `index.idyll`. To compile this post using
-idyll, run the command `idyll` inside of this directory.
-
-
-Idyll posts are designed to support interaction and
-data-driven graphics.
+I am doing a test thing.
 
 [var name:"state" value:0 /]
 [CustomD3Component className:"d3-component" state:state /]
