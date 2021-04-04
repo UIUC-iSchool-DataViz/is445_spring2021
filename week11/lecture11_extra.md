@@ -7,16 +7,6 @@ date: 2020-04-05
 include_vega: true
 setup_script: setup_script.js
 ---
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 11, Extra Vega-lite
-
----
 
 <br />
 <br />

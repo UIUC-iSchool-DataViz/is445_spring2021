@@ -1,25 +1,14 @@
 ---
-title: Lecture 11 - Publishing & more in Idyll
+title: Lecture 11 - Iodide, Publishing & more in Idyll
 layout: lecture
 description: >-
  Publishing your viz, vega-lite in Idyll and a bit of d3.js
 date: 2020-04-05
 ---
 
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 11
-
----
-
 ## This Week/Last Week
 
-<img src='images/this_week2.png'>
+<img src='../week10/images/this_week2.png'>
 
 notes:
 
@@ -28,16 +17,19 @@ finally getting into idyll
 
 ---
 
-## Quick note back in Iodide
-
-https://alpha.iodide.io/notebooks/6217/
+## Iodide HW due date
 
 notes:
-I won't be going through all of the rest of this notebook, but I wanted to point out some interactivity options and side-by-side plots
 
-Also, should we push the due-date of the assignment by a few days?
+Should we push the due-date of the assignment by a few days?
 
+---
 
+<br/>
+<br/>
+<br/>
+
+# Back to Iodide!!
 
 ---
 
@@ -100,7 +92,7 @@ Cons:
  * Not well-documented
  * open source means less guarantee of long-term support in the future
 
-<img src="../week08/images/idyll.png" width="200"/>
+<img src="images/idyll.png" width="200"/>
 
 
 
