@@ -30,3 +30,12 @@ Or ordered lists:
 1. first thing
 1. second thing
 1. third thing
+
+Another useful thing, will be code blocks:
+
+```
+I am a chunk of code
+lines are different here
+```
+
+
