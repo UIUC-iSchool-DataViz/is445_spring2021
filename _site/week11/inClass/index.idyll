@@ -160,3 +160,15 @@ Note: this was a CSV file and most data on the web will be in json file formatti
 Read the data in and then plot.
 
 [data name:"corgs" source:"corgiData_countries_subset_2020.json" /]
+
+[IdyllVegaLite data:corgs spec:`{
+  mark: "circle",
+  width:400,
+  height:200,
+  encoding: {
+    x: {field:"countries", type:"nominal"},
+	y: {field:"year", type:"temporal"}
+  }
+}` 
+
+/]
