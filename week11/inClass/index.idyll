@@ -150,3 +150,6 @@ Building from [one of the vega-lite Idyll tutorials](https://idyll-lang.github.i
 }` 
 
 /]
+
+We note that the year is formatted a little weirdly, probably useful to look at this data in a different format.
+
