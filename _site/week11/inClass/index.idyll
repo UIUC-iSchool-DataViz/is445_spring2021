@@ -115,3 +115,6 @@ We'll use the [corgis per country over time (download)](https://uiuc-ischool-dat
 Trying to visualize our more analytical dataset with the [Chart built-in](https://idyll-lang.org/docs/component/chart).
 
 [Chart type:"line" data:corgisTime domain:`null` range:`null` x:"Years" y:"United States" /]
+
+So, we notice that a line plot maybe isn't great. And the years on the x-axis 
+are not formatted well.

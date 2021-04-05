@@ -118,3 +118,7 @@ Trying to visualize our more analytical dataset with the [Chart built-in](https:
 
 So, we notice that a line plot maybe isn't great. And the years on the x-axis 
 are not formatted well.
+
+[Chart type:"bar" data:corgisTime domain:`null` range:`null` x:"Years" y:"United States" /]
+
+[Chart type:"time" data:corgisTime domain:`null` range:`null` x:"Years" y:"United States" /]
