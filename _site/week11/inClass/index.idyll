@@ -104,3 +104,4 @@ This will make our figures interactive by using a [scrolling overlay](https://id
 
 ## Including numerical/categorical data
 
+We'll use the [corgis per country over time (download)](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week11/corg/corgs_per_country_over_time_columns_2020.csv).
