@@ -122,3 +122,5 @@ are not formatted well.
 [Chart type:"bar" data:corgisTime domain:`null` range:`null` x:"Years" y:"United States" /]
 
 [Chart type:"time" data:corgisTime domain:`null` range:`null` x:"Years" y:"United States" /]
+
+So, we notice that none of these charts are really great.  We can use vega-lite to make nicer charts!
