@@ -81,3 +81,7 @@ We can "float" things to the right or to the left using the [float built-in comp
 	style:`{height:'300px'}` 
   /]
 [/Float]
+
+### Scrolling Overlays Built-in
+
+This will make our figures interactive by using a [scrolling overlay](https://idyll-lang.org/docs/component/scroller).
