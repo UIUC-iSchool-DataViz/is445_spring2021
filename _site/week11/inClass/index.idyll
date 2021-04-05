@@ -155,4 +155,4 @@ We note that the year is formatted a little weirdly, probably useful to look at 
 
 Note: this was a CSV file and most data on the web will be in json file formatting.
 
-[We'll be using a subset](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week11/corg/corgiData_countries_subset_2020.json) that is a little easier to deal wit than the full 15Mb dataset.
+[We'll be using a subset](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week11/corg/corgiData_countries_subset_2020.json) that is a little easier to deal wit than the full 15Mb dataset.
