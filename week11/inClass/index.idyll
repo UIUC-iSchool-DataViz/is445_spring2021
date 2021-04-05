@@ -41,3 +41,7 @@ lines are different here
 We can also do `inline code` as well.
 
 Hyperlinks work the same like [linking to the course webpage](https://uiuc-ischool-dataviz.github.io/is445_spring2021/).
+
+## Idyll's built-in components
+
+We'll play with a few of Idyll's [built-in components](https://idyll-lang.org/docs/components).
