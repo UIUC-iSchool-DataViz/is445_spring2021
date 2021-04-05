@@ -106,4 +106,6 @@ This will make our figures interactive by using a [scrolling overlay](https://id
 
 We'll use the [corgis per country over time (download)](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week11/corg/corgs_per_country_over_time_columns_2020.csv).  This data comes from [webscraping code](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/grabCorgData_subpages.py) and [processing notebook](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/calc_corgData.ipynb) which grabs and processes data from a [Corgi Database](http://www.cardiped.net/browseDogs.php) for more details if you can't wait.
 
+[data name:"corgisTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
+
 

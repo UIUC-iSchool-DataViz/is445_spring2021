@@ -108,4 +108,4 @@ We'll use the [corgis per country over time (download)](https://uiuc-ischool-dat
 
 [data name:"corgisTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
 
-
+[Table data:corgisTime /]
