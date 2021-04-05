@@ -69,9 +69,15 @@ We'll play with a few of Idyll's [built-in components](https://idyll-lang.org/do
 We can "float" things to the right or to the left using the [float built-in component](https://idyll-lang.org/docs/component/float). 
 
 [Float position:"left"]
-
+  [img 
+    src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png' 
+	style:`{height:'300px'}` 
+  /]
 [/Float]
 
 [Float position:"right"]
-
+  [img 
+    src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week10/corg/IMG_2809.jpg'
+	style:`{height:'300px'}` 
+  /]
 [/Float]
