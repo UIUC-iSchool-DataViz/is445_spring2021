@@ -63,3 +63,7 @@ Note: this is much like HTML coding:
 ## Idyll's built-in components
 
 We'll play with a few of Idyll's [built-in components](https://idyll-lang.org/docs/components).
+
+### Layout Built-ins
+
+We can "float" things to the right or to the left using the [float built-in component](https://idyll-lang.org/docs/component/float). 
