@@ -21,9 +21,12 @@ Today we'll have an introduction to Idyll and its built-in features.
 
 We can use all the same syntax as before like **bold** and *italic*.
 
-We can also do lists:
+We can also do lists (note: no space between left margin and symbol):
 * thing 1
 * another thing
 * yet another thing
  
-Or ordered lists
+Or ordered lists:
+1. first thing
+1. second thing
+1. third thing
