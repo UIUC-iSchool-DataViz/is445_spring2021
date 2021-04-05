@@ -172,3 +172,5 @@ Read the data in and then plot.
 }` 
 
 /]
+
+Let's add some interactivity by allowing the user to select the color of the dots based on other data attributes.
