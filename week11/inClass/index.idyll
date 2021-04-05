@@ -20,3 +20,10 @@ Today we'll have an introduction to Idyll and its built-in features.
 ## Markdown
 
 We can use all the same syntax as before like **bold** and *italic*.
+
+We can also do lists:
+* thing 1
+* another thing
+* yet another thing
+ 
+Or ordered lists
