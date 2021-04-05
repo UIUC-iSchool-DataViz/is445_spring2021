@@ -109,3 +109,9 @@ We'll use the [corgis per country over time (download)](https://uiuc-ischool-dat
 [data name:"corgisTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
 
 [Table data:corgisTime /]
+
+### Charts built-in
+
+Trying to visualize our more analytical dataset with the [Chart built-in](https://idyll-lang.org/docs/component/chart).
+
+[Chart type:"line" data:dataToBeCharted domain:`[0, 8]` range:`[0, 1]` /]
