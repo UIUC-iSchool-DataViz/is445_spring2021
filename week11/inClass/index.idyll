@@ -67,3 +67,11 @@ We'll play with a few of Idyll's [built-in components](https://idyll-lang.org/do
 ### Layout Built-ins
 
 We can "float" things to the right or to the left using the [float built-in component](https://idyll-lang.org/docs/component/float). 
+
+[Float position:"left"]
+
+[/Float]
+
+[Float position:"right"]
+
+[/Float]
