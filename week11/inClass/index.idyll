@@ -51,6 +51,14 @@ So we'll use Idyll-html-like syntax to play with the layout.
 
 [img src:'https://i.redd.it/5f0snjdbzr121.jpg' style:`{height:'300px'}` /]
 
+Note: this is much like HTML coding:
+
+[div className:"myDiv"]
+[p]
+  My Paragraph.
+[/p]
+[/div]
+
 
 ## Idyll's built-in components
 
