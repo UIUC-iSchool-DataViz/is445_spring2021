@@ -130,3 +130,20 @@ So, we notice that none of these charts are really great.  We can use vega-lite 
 ### Simple line plot
 
 Building from [one of the vega-lite Idyll tutorials](https://idyll-lang.github.io/examples/csv/).
+
+[IdyllVegaLite data:lakeHuron spec:`{
+  mark: "line",
+  encoding: {
+    x: {
+      field: "time",
+      type: "temporal",
+      axis: {title: "Year", format:"%Y"}
+    },
+    y: {
+      field: "value",
+      type: "quantitative",
+      axis: {title: "Water level"},
+      scale: { domain: [575, 582] }
+    }
+  }
+}` /]
