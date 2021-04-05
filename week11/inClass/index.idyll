@@ -133,6 +133,8 @@ Building from [one of the vega-lite Idyll tutorials](https://idyll-lang.github.i
 
 [IdyllVegaLite data:corgisTime spec:`{
   mark: "line",
+  width:400,
+  height:200,
   encoding: {
     x: {
       field: "Years",
