@@ -49,7 +49,7 @@ Hyperlinks work the same like [linking to the course webpage](https://uiuc-ischo
 This is a very large corgi (which is great, but maybe not what we want).  
 So we'll use Idyll-html-like syntax to play with the layout.
 
-[img src:'https://i.redd.it/5f0snjdbzr121.jpg' /]
+[img src:'https://i.redd.it/5f0snjdbzr121.jpg' style:`{height:'300px'}` /]
 
 
 ## Idyll's built-in components
