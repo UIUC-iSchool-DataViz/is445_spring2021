@@ -163,8 +163,8 @@ Read the data in and then plot.
 
 [IdyllVegaLite data:corgs spec:`{
   mark: "circle",
-  width:400,
-  height:200,
+  width:600,
+  height:400,
   encoding: {
     x: {field:"countries", type:"nominal"},
 	y: {field:"year", type:"temporal"}
