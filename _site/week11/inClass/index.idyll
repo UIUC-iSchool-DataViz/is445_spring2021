@@ -2,7 +2,7 @@
 
 [Header
   fullWidth:true
-  title:"MyIdyllPost"
+  title:"IS445 Spring 2021"
   subtitle:"Welcome to Idyll. Open index.idyll to start writing"
   author:"Your Name Here"
   authorLink:"https://idyll-lang.org"

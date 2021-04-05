@@ -3,7 +3,7 @@
 [Header
   fullWidth:true
   title:"IS445 Spring 2021"
-  subtitle:"Welcome to Idyll. Open index.idyll to start writing"
+  subtitle:"Super cool web viz from Data Viz at the iSchool!"
   author:"Your Name Here"
   authorLink:"https://idyll-lang.org"
   date:"Apr 5, 2021"
