@@ -1,12 +1,12 @@
-[meta title:"Test2" description:"Short description of your project" /]
+[meta title:"MyIdyllPost" description:"Short description of your project" /]
 
 [Header
   fullWidth:true
-  title:"Test2"
+  title:"MyIdyllPost"
   subtitle:"Welcome to Idyll. Open index.idyll to start writing"
   author:"Your Name Here"
   authorLink:"https://idyll-lang.org"
-  date:"Apr 4, 2021"
+  date:"Apr 5, 2021"
   background:"#222222"
   color:"#ffffff"
    /]
@@ -15,7 +15,13 @@
 
 ## Introduction
 
-I am doing a test thing.  One more thing.  Try try.
+This is an Idyll post. It is generated via
+the file `index.idyll`. To compile this post using
+idyll, run the command `idyll` inside of this directory.
+
+
+Idyll posts are designed to support interaction and
+data-driven graphics.
 
 [var name:"state" value:0 /]
 [CustomD3Component className:"d3-component" state:state /]
