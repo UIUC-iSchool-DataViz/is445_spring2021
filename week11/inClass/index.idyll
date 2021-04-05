@@ -170,7 +170,20 @@ Read the data in and then plot.
 	y: {field:"year", type:"temporal"}
   }
 }` 
-
 /]
 
 Let's add some interactivity by allowing the user to select the color of the dots based on other data attributes.
+
+[var name:"colorBy" value:`{}` /]
+
+[IdyllVegaLite data:corgs spec:`{
+  mark: "circle",
+  width:600,
+  height:400,
+  encoding: {
+    x: {field:"countries", type:"nominal"},
+	y: {field:"year", type:"temporal"},
+	color: colorBy // color-by variable
+  }
+}` 
+/]
