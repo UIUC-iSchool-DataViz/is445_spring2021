@@ -127,4 +127,6 @@ So, we notice that none of these charts are really great.  We can use vega-lite 
 
 ## Vega-lite to plot our data
 
+### Simple line plot
 
+Building from [one of the vega-lite Idyll tutorials](https://idyll-lang.github.io/examples/csv/).
