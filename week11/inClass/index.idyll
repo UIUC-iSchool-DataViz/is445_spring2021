@@ -88,7 +88,10 @@ This will make our figures interactive by using a [scrolling overlay](https://id
 
 [Scroller currentStep:scrollerIndex]
   [Graphic style:`{padding: 50}`]
-      [Chart type:`"line"` data:`scrollerChartData.slice(0, scrollerIndex + 2)` /]
+  [img 
+    src::'https://uiuc-ischool-dataviz.github.io/spring2019online/week10/corg/IMG_2814.jpg'
+	style:`{height:'300px'}` 
+  /]
   [/Graphic]
 
   [Step]## Hey, neat, here's some data![/Step]
