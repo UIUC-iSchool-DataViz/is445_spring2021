@@ -174,7 +174,7 @@ Read the data in and then plot.
 
 Let's add some interactivity by allowing the user to select the color of the dots based on other data attributes.
 
-[var name:"colorBy" value:`{field:"sex", type:"nominal"}` /]
+[var name:"colorBy" value:`{}` /]
 
 [IdyllVegaLite data:corgs spec:`{
   mark: "circle",
@@ -187,3 +187,7 @@ Let's add some interactivity by allowing the user to select the color of the dot
   }
 }` 
 /]
+
+Color by:
+[button onClick:`colorBy = {}`]None[/button]
+[button onClick:`colorBy = {field:"sex", type:"nominal"}`]Sex of Corgi[/button]
