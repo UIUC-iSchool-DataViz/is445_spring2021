@@ -322,6 +322,8 @@ Color by:
 Color by:
  [button onClick:`colorBy = {}` ]None[/button]
  [button onClick:`colorBy = {field: 'sex', type: 'nominal'}` ]Sex of Corgi[/button]
+ 
+// GOT TO HERE Week 11, Spring 2021
 
 // HERE - CHANGE COLOR SCHEME - https://vega.github.io/vega-lite/docs/scale.html#scheme 
 
@@ -333,7 +335,7 @@ Color by:
 // check out: https://vega.github.io/vega/docs/schemes/#reference 
 
 
-### Binning and aggregating data - histograms (got to here, Week 11)
+### Binning and aggregating data - histograms 
 
 Beyond scatter plots, we can do histograms in which we aggregate parts of our data set:
 
