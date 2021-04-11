@@ -6,20 +6,9 @@ description: >-
 date: 2020-04-12
 ---
 
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 12
-
----
-
 ## Last Week
 
-<img src="../week11/images/this_week2.png">
+<img src="../week10/images/this_week2.png">
 
 notes:
 so far, we've been covering a bit of javascript and vega-lite as some new viz engines and using them in Idyll
@@ -32,6 +21,12 @@ so far, we've been covering a bit of javascript and vega-lite as some new viz en
 
 notes:
 this week we'll discuss more general methods of publishing, and we'll talk about how to validate how "well" our visualizations are doing, as well as start touching on some d3.js within Idyll
+
+---
+
+## Next week
+
+Talk by the Advanced Visualization Lab!
 
 ---
 
@@ -239,7 +234,7 @@ Pros:
 
 Cons:
  * Less common syntax (Markdown)
- * Not well-documented
+ * Not well-documented (but getting better each day!)
  * open source means less guarantee of long-term support in the future
 
 <img src="images/idyll.png" width="200"/>
@@ -365,6 +360,9 @@ with 3D printing, you can make "surfaces" in your dataset (more on that when we 
 
 See Homework #7 for different options.
 
+notes:
+go to HW 7 as a reminder
+
 ---
 
 ## Final Project, Part 1
@@ -376,4 +374,4 @@ go to page!!
 
 ## Coding
 
-Onto some Javascript in Idyll & volume rendering in Python!
+Onto some Javascript in Idyll & volume rendering in Python (if we have time!)!
