@@ -247,7 +247,7 @@ Note: a little harder to use the vega-editor to debug, but not impossible.
   width:600,
   height:400,
   // add in a transformation to filter our data
-  transform:[{filter:{field:"year", "lte":2010}}],
+  transform:[{filter:{"timeUnit":"year", field:"year", "lte":2010}}],
   encoding: {
     x: {field:"year", type:"temporal"},
 	y: {aggregate:"count", type:"quantitative", 
