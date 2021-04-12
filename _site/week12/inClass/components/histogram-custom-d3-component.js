@@ -5,7 +5,7 @@ const d3 = require('d3'); // to use the d3 functions
 const size = 500; // setting the base size of the canvas
 
 // this class name matches with the call in the index.idyll file
-class HistogramCustomD3Component extends D3Component {
+class CustomD3Component extends D3Component {
     
   initialize(node, props) { // "initialize" sets up initial canvas
     const svg = (this.svg = d3.select(node).append('svg')); // think: "div" in vega-lite
@@ -31,5 +31,5 @@ class HistogramCustomD3Component extends D3Component {
   }
 }
 
-module.exports = HistogramCustomD3Component; // this name is the same as the
+module.exports = CustomD3Component; // this name is the same as the
 // class name and also what we call in the index.idyll file
