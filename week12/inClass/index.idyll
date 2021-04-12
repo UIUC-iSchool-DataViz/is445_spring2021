@@ -218,3 +218,15 @@ A mystery!  Why is this not working?
 
 This will basically be things that we already did before in Iodide!
 
+[IdyllVegaLite data:corgs spec:`{
+  mark: "bar",
+  width:600,
+  height:400,
+  encoding: {
+    x: {field:"countries", type:"nominal"},
+	y: {aggregate:"count", type:"quantitative", title:"Number of corgis born in a country"}
+	// y: {field:"year", type:"temporal"},
+	// color: colorBy2 // color-by variable
+  }
+}` 
+/]
