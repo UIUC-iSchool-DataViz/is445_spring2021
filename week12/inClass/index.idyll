@@ -322,5 +322,7 @@ We can start from one of the custom D3 components that "came with" our default A
 [/button]
 
 Plan of attack:
- 1. Remake a plot that we know a bit about (bar chart of births over time)
- 1. Build from an example that looks relatively easy to change [like this one](https://bl.ocks.org/vikkya/75bda04cd0c00e49cbda6cfee8d97aba).
+1. Remake a plot that we know a bit about (bar chart of births over time)
+1. Build from an example that looks relatively easy to change [like this one](https://bl.ocks.org/vikkya/75bda04cd0c00e49cbda6cfee8d97aba) (we got here by googling "time bar chart d3 v4").
+
+
