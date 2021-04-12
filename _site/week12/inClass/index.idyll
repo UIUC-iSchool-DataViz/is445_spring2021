@@ -308,3 +308,7 @@ Note: a little harder to use the vega-editor to debug, but not impossible.
  [p] [/p]
  [Display value:yearStart /] [Range value:yearEnd min:yearStart max:2020 /] 2020
 [/Float]
+
+## D3 in Idyll
+
+We can also "plug in" [D3.js](https://d3js.org/) plots in Idyll.
