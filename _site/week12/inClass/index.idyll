@@ -299,16 +299,16 @@ Note: a little harder to use the vega-editor to debug, but not impossible.
 // Lowest Year: [Display value:yearStart /] [Range value:yearEnd min:yearStart max:2020 /] Highest Year: 2020
 
 [Float position:"left"]
- [section]
+// [section]
  Lower bound:
  
  1920 [Range value:yearStart min:1920 max:yearEnd /] [Display value:yearEnd /]
- [/section]
+// [/section]
 [/Float]
 [Float position:"right"]
- [section]
+// [section]
  Upper bound:
  
  [Display value:yearStart /] [Range value:yearEnd min:yearStart max:2020 /] 2020
- [/section]
+// [/section]
 [/Float]
