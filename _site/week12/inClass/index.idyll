@@ -265,3 +265,4 @@ Note: a little harder to use the vega-editor to debug, but not impossible.
 
 [button onClick: `colorBy4 = {}`] None [/button]
 [button onClick: `colorBy4 = {field:'sex', type:'nominal', scale:{"scheme":"category20"}}`]Sex of Corgi[/button]
+[button onClick: `colorBy4 = {field:'countries', type:'nominal', scale:{"scheme":"category20b"}}`]Sex of Corgi[/button]
