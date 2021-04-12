@@ -325,7 +325,7 @@ Plan of attack:
 1. Remake a plot that we know a bit about (bar chart of births over time)
 1. Build from an example that looks relatively easy to change [like this one](https://bl.ocks.org/vikkya/75bda04cd0c00e49cbda6cfee8d97aba) (we got here by googling "time bar chart d3 v4").
 
-Steps we are going to take:
+Steps we are going to take to get a workable example:
 1. copy the commented `custom-d3-component.js` to a new file
 1. change the class and object names
 1. not do interactivity (comment out update function)
@@ -343,4 +343,5 @@ Steps we are going to take:
 // taking out interactivity (for now!)
 [HistogramCustomD3Component className:"d3-component" /]
 
-5. Now that we have the original example working, let's start modifying things for our dataset.
+Steps to modify for our data:
+1. Now that we have the original example working, let's start modifying things for our dataset.
