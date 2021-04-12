@@ -20,14 +20,14 @@ class CustomD3Component extends D3Component {
       .attr('cy', Math.random() * size);
   }
 
-  update(props, oldProps) {
-    this.svg
-      .selectAll('circle')
-      .transition()
-      .duration(750)
-      .attr('cx', Math.random() * size)
-      .attr('cy', Math.random() * size);
-  }
+//  update(props, oldProps) {
+//    this.svg
+//      .selectAll('circle')
+//      .transition()
+//      .duration(750)
+//      .attr('cx', Math.random() * size)
+//      .attr('cy', Math.random() * size);
+//  }
 }
 
 module.exports = CustomD3Component; // this name is the same as the
