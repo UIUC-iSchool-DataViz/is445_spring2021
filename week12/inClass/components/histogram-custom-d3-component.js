@@ -39,7 +39,7 @@ class HistogramCustomD3Component extends D3Component {
 		  "translate(" + margin.left + "," + margin.top + ")");
 
 	// reading in data and plotting
-	d3.csv("bar-data.csv", function(error, data) {
+	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week14/bar-data.csv", function(error, data) {
 
 	    data.forEach(function(d) {
 		d.date = parseDate(d.date);
