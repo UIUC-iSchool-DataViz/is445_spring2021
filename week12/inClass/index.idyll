@@ -213,3 +213,8 @@ Color by:
 [button onClick:`colorBy2 = {field:"sex", type:"nominal", scale:{"scheme":"category10"}`]Sex of Corgi[/button]
 
 A mystery!  Why is this not working?
+
+## Binning and aggregating data -- histograms
+
+This will basically be things that we already did before in Iodide!
+
