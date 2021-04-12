@@ -16,14 +16,14 @@ class CustomD3Component extends D3Component {
 
     svg
       .append('circle') // on top of base canvas, draw a circle
-      .attr('r', 200) // radius
-      .attr('cx', Math.random() * size)
-      .attr('cy', Math.random() * size);
+      .attr('r', 20) // radius
+      .attr('cx', Math.random() * size) // randomly selecting an x (center of circle)
+      .attr('cy', Math.random() * size); // randomly selecting a y (center)
   }
 
   update(props, oldProps) { // this "update" function is needed to change the plot
-    this.svg
-      .selectAll('circle')
+    this.svg // selecting the "current" svg drawing
+      .selectAll('circle') // of the drawing, pick out the circle element
       .transition()
       .duration(750)
       .attr('cx', Math.random() * size)
