@@ -42,10 +42,14 @@ class HistogramCustomD3Component extends D3Component {
 	// goal: do a bar plot with our data -- years vs. corgis born in the United States
 	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week14/bar-data.csv", function(error, data) {
 
+	    // practice investigating data:
+	    console.log(Object.keys(data)); // what columns/objects in our dataset
+
+	    
 	    // for each row in data, do something with the date
 	    data.forEach(function(d) {
 		d.date = parseDate(d.date);
-		console.log(d.date); // like print in Python
+		//console.log(d.date); // like print in Python
 		d.value = +d.value;
 	    });
 
