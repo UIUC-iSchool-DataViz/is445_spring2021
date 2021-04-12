@@ -342,3 +342,5 @@ Steps we are going to take:
 
 // taking out interactivity (for now!)
 [HistogramCustomD3Component className:"d3-component" /]
+
+5. Now that we have the original example working, let's start modifying things for our dataset.
