@@ -15,8 +15,8 @@ class CustomD3Component extends D3Component {
       .style('height', 'auto'); // fills height based on defaults
 
     svg
-      .append('circle')
-      .attr('r', 20)
+      .append('circle') // on top of base canvas, draw a circle
+      .attr('r', 200) // radius
       .attr('cx', Math.random() * size)
       .attr('cy', Math.random() * size);
   }
