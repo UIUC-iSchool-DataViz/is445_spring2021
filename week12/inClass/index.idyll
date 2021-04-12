@@ -336,3 +336,6 @@ Steps we are going to take:
 [button onClick:`state2++`]
   Click Me.
 [/button]
+
+// taking out interactivity (for now!)
+[HistogramCustomD3Component className:"d3-component" /]
