@@ -210,4 +210,4 @@ We know that we have different vega-lite [schemes we can use](https://vega.githu
 
 Color by:
 [button onClick:`colorBy2 = {}`]None[/button]
-[button onClick:`colorBy2 = {field:"sex", type:"nominal"}`]Sex of Corgi[/button]
+[button onClick:`colorBy2 = {field:"sex", type:"nominal", scale:{"scheme":"category20"}`]Sex of Corgi[/button]
