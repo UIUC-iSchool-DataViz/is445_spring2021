@@ -2,7 +2,7 @@ const React = require('react'); // javascript library for interaction
 const D3Component = require('idyll-d3-component'); // to interface with d3.js
 const d3 = require('d3'); // to use the d3 functions
 
-const size = 600;
+const size = 600; // setting the base size of the canvas
 
 class CustomD3Component extends D3Component {
   initialize(node, props) {
