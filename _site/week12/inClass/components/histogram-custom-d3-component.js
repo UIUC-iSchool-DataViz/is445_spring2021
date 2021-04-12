@@ -27,15 +27,18 @@ class HistogramCustomD3Component extends D3Component {
 	var yAxis = d3.axisLeft()
 	    .scale(y)
 	    .ticks(10);
-	
+
+	// setting up the canvas object
 	const svg = (this.svg = d3.select(node).append('svg'));
-	svg
+	// drawing the background canvas
+	svg 
 	    .attr("width", width + margin.left + margin.right)
 	    .attr("height", height + margin.top + margin.bottom)
 	    .append("g")
 	    .attr("transform",
 		  "translate(" + margin.left + "," + margin.top + ")");
-	
+
+	// reading in data and plotting
 	d3.csv("bar-data.csv", function(error, data) {
 
 	    data.forEach(function(d) {
