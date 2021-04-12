@@ -300,6 +300,6 @@ Note: a little harder to use the vega-editor to debug, but not impossible.
 
 [Float position:"left"]
  [section]
- Lowest Year: 1920 [Range value:yearStart min:1920 max:yearEnd /] Highest Year: [Display value:yearEnd /]
+ Lowest: 1920 [Range value:yearStart min:1920 max:yearEnd /] Highest: [Display value:yearEnd /]
  [/section]
 [/Float]
