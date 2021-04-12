@@ -2,15 +2,15 @@ const React = require('react'); // javascript library for interaction
 const D3Component = require('idyll-d3-component'); // to interface with d3.js
 const d3 = require('d3'); // to use the d3 functions
 
-const size = 600; // setting the base size of the canvas
+const size = 400; // setting the base size of the canvas
 
 // this class name matches with the call in the index.idyll file
 class CustomD3Component extends D3Component {
     
   initialize(node, props) { // "initialize" sets up initial canvas
-    const svg = (this.svg = d3.select(node).append('svg'));
+    const svg = (this.svg = d3.select(node).append('svg')); // think: "div" in vega-lite
     svg
-      .attr('viewBox', `0 0 ${size} ${size}`)
+      .attr('viewBox', `0 0 ${size} ${size}`) // draw a certain sized canvas
       .style('width', '100%')
       .style('height', 'auto');
 
