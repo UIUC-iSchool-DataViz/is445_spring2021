@@ -317,6 +317,6 @@ We can start from one of the custom D3 components that "came with" our default A
 
 [var name:"state" value:0 /]
 [CustomD3Component className:"d3-component" state:state /]
-[button onClick:`state++` /]
- Click me!
+[button onClick:`state++`]
+  Click Me.
 [/button]
