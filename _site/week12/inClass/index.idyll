@@ -331,11 +331,14 @@ Steps we are going to take:
 1. not do interactivity (comment out update function)
 1. update the drawing sequence to match the bar chart d3.js example
 
-[var name:"state2" value:0 /]
-[HistogramCustomD3Component className:"d3-component" state:state2 /]
-[button onClick:`state2++`]
-  Click Me.
-[/button]
+// [var name:"state2" value:0 /]
+
+// [HistogramCustomD3Component className:"d3-component" state:state2 /]
+
+// [button onClick:`state2++`]
+ //  Click Me.
+
+// [/button]
 
 // taking out interactivity (for now!)
 [HistogramCustomD3Component className:"d3-component" /]
