@@ -40,10 +40,11 @@ class HistogramCustomD3Component extends D3Component {
 
 	// reading in data and plotting
 	// goal: do a bar plot with our data -- years vs. corgis born in the United States
-	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week14/bar-data.csv", function(error, data) {
+	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week14/bar-data.csv", function(error, data) { // note our data is called "data"
 
 	    // practice investigating data:
-	    console.log(Object.keys(data)); // what columns/objects in our dataset
+	    console.log(Object.keys(data)); // what attributes in our dataset
+	    console.log(data.columns); 
 
 	    
 	    // for each row in data, do something with the date
