@@ -295,4 +295,4 @@ Note: a little harder to use the vega-editor to debug, but not impossible.
 [button onClick: `colorBy5 = {field:'countries', type:'nominal', scale:{"scheme":"category20b"}}`]Country[/button]
 
 Lowest Year: 1920 [Range value:yearStart min:1920 max:yearEnd /] Highest Year: [Display value:yearEnd /]
-[Range value:yearEnd min:yearStart max:2020 /] Highest Year: 2020
+Lowest Year: [Display value:yearStart /] [Range value:yearEnd min:yearStart max:2020 /] Highest Year: 2020
