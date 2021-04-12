@@ -1,6 +1,6 @@
-const React = require('react');
-const D3Component = require('idyll-d3-component');
-const d3 = require('d3');
+const React = require('react'); // javascript library for interaction
+const D3Component = require('idyll-d3-component'); // to interface with d3.js
+const d3 = require('d3'); // to use the d3 functions
 
 const size = 600;
 
