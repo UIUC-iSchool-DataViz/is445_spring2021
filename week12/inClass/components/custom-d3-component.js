@@ -25,9 +25,9 @@ class CustomD3Component extends D3Component {
     this.svg // selecting the "current" svg drawing
       .selectAll('circle') // of the drawing, pick out the circle element
       .transition() // transition between states
-      .duration(75) // 750 milliseconds between old and new states
-      .attr('cx', Math.random() * size)
-      .attr('cy', Math.random() * size);
+      .duration(750) // 750 milliseconds between old and new states
+      .attr('cx', Math.random() * size) // update the x attribute of circle randomly
+      .attr('cy', Math.random() * size); // update the y attribute of circle randomly
   }
 }
 

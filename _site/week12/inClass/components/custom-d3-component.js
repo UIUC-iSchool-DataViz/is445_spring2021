@@ -24,8 +24,8 @@ class CustomD3Component extends D3Component {
   update(props, oldProps) { // this "update" function is needed to change the plot
     this.svg // selecting the "current" svg drawing
       .selectAll('circle') // of the drawing, pick out the circle element
-      .transition()
-      .duration(750)
+      .transition() // transition between states
+      .duration(75) // 750 milliseconds between old and new states
       .attr('cx', Math.random() * size)
       .attr('cy', Math.random() * size);
   }
