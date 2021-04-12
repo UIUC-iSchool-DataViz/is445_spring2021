@@ -6,7 +6,7 @@ const d3 = require('d3'); // to use the d3 functions
 
 var margin = {top: 20, right: 20, bottom: 70, left: 40},
     width = 1200 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    height = 4000 - margin.top - margin.bottom;
 
 // this class name matches with the call in the index.idyll file
 class HistogramCustomD3Component extends D3Component {
