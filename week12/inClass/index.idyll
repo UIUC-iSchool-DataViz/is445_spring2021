@@ -245,6 +245,8 @@ Note: a little harder to use the vega-editor to debug, but not impossible.
 
 ## Filtering operation
 
+[var name:"colorBy4" value:`{}` /]
+
 [IdyllVegaLite data:corgs spec:`{
   mark: "bar",
   width:600,
@@ -255,7 +257,8 @@ Note: a little harder to use the vega-editor to debug, but not impossible.
   encoding: {
     x: {field:"year", type:"temporal"},
 	y: {aggregate:"count", type:"quantitative", 
-	     title:"Number of Corgis Born"}
+	     title:"Number of Corgis Born"},
+	color: colorBy4
   }
 }` 
 /]
