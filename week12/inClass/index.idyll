@@ -239,3 +239,17 @@ This will basically be things that we already did before in Iodide!
 // [button onClick: `colorBy3 = {field:'sex', type='nominal'}`]Sex of Corgi[/button]
 
 Note: a little harder to use the vega-editor to debug, but not impossible.
+
+## Filtering operation
+
+[IdyllVegaLite data:corgs spec:`{
+  mark: "bar",
+  width:600,
+  height:400,
+  encoding: {
+    x: {field:"year", type:"temporal"},
+	y: {aggregate:"count", type:"quantitative", 
+	     title:"Number of Corgis Born"}
+  }
+}` 
+/]
