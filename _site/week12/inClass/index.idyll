@@ -293,3 +293,5 @@ Note: a little harder to use the vega-editor to debug, but not impossible.
 [button onClick: `colorBy5 = {}`] None [/button]
 [button onClick: `colorBy5 = {field:'sex', type:'nominal', scale:{"scheme":"category20"}}`]Sex of Corgi[/button]
 [button onClick: `colorBy5 = {field:'countries', type:'nominal', scale:{"scheme":"category20b"}}`]Country[/button]
+
+[Range value:yearStart min:1920 max:2020 /]
