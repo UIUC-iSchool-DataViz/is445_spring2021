@@ -238,7 +238,7 @@ This will basically be things that we already did before in Iodide!
 // [button onClick: `colorBy3 = {field:'sex', type:'nominal', scale:{"scheme":"category20"}`]Sex of Corgi[/button]
 
 // Only half way fixed!
-[button onClick: `colorBy3 = {field:'sex', type:'nominal'`]Sex of Corgi[/button]
+[button onClick: `colorBy3 = {field:'sex', type:'nominal'}`]Sex of Corgi[/button]
 
 Note: a little harder to use the vega-editor to debug, but not impossible.
 
