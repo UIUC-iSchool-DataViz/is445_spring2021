@@ -226,14 +226,16 @@ This will basically be things that we already did before in Iodide!
   height:400,
   encoding: {
     x: {field:"countries", type:"nominal"},
-	y: {aggregate:"count", type:"quantitative", title:"Number of corgis born in a country"},
+	y: {aggregate:"count", type:"quantitative", 
+	     title:"Number of corgis born in a country"}// ,
 	// y: {field:"year", type:"temporal"},
-	color: colorBy3 // color-by variable
+	// color: colorBy3 // color-by variable
   }
 }` 
 /]
 
-[button onClick: `colorBy3 = {}`] None [/button]
-[button onClick: `colorBy3 = {field:'sex', type='nominal'}`]Sex of Corgi[/button]
+// [button onClick: `colorBy3 = {}`] None [/button]
+
+// [button onClick: `colorBy3 = {field:'sex', type='nominal'}`]Sex of Corgi[/button]
 
 Note: a little harder to use the vega-editor to debug, but not impossible.
