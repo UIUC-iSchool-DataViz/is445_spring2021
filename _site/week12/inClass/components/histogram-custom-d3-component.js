@@ -39,23 +39,28 @@ class HistogramCustomD3Component extends D3Component {
 		  "translate(" + margin.left + "," + margin.top + ")");
 
 	// reading in data and plotting
+	// goal: do a bar plot with our data -- years vs. corgis born in the United States
 	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week14/bar-data.csv", function(error, data) {
 
+	    // for each row in data, do something with the date
 	    data.forEach(function(d) {
 		d.date = parseDate(d.date);
 		d.value = +d.value;
 	    });
-	    
+
+	    // setting the range of x/y axis
 	    x.domain(data.map(function(d) { return d.date; }));
 	    y.domain([0, d3.max(data, function(d) { return d.value; })]);
-	    
+
+	    // drawing the x-axis
 	    svg.append("g")
 		.attr("class", "x axis")
 		.attr("transform", "translate(0," + height + ")")
 		.call(xAxis.ticks(null).tickSize(0))
 		.selectAll("text")
 		.style("text-anchor", "middle")
-	    
+
+	    // drawing the y-axis
 	    svg.append("g")
 		.attr("class", "y axis")
 		.call(yAxis.ticks(null).tickSize(0))
@@ -63,26 +68,29 @@ class HistogramCustomD3Component extends D3Component {
 		.attr("y", 6)
 		.style("text-anchor", "middle")
 		.text("Value");
-	    
+
+	    // drawing bars of bar chart
 	    svg.selectAll("bar")
 		.data(data)
 		.enter().append("rect")
-		.style("fill", function(d){ return d.value < d.target ? '#EF5F67': '#3FC974'})
+		// .style("fill", function(d){ return d.value < d.target ? '#EF5F67': '#3FC974'})
 		.attr("x", function(d) { return x(d.date); })
 		.attr("width", x.bandwidth())
 		.attr("y", function(d) { return y(d.value); })
 		.attr("height", function(d) { return height - y(d.value); });
-	    svg.selectAll("lines")
-		.data(data)
-		.enter().append("line")
-		.style("fill", 'none')
-  		.attr("x1", function(d) { return x(d.date) + x.bandwidth()+5; })
-		.attr("x2", function(d) { return x(d.date)-5; })
-		.attr("y1", function(d) { return y(d.target); })
-		.attr("y2", function(d) { return y(d.target); })
-  		.style("stroke-dasharray", [2,2])
-  		.style("stroke", "#000000")
-		.style("stroke-width", 2)
+
+	    // drawing the dashed lines
+	    //svg.selectAll("lines")
+		//.data(data)
+		//.enter().append("line")
+		//.style("fill", 'none')
+  		//.attr("x1", function(d) { return x(d.date) + x.bandwidth()+5; })
+		//.attr("x2", function(d) { return x(d.date)-5; })
+		//.attr("y1", function(d) { return y(d.target); })
+		//.attr("y2", function(d) { return y(d.target); })
+  		//.style("stroke-dasharray", [2,2])
+  		//.style("stroke", "#000000")
+		//.style("stroke-width", 2)
 	    
 	});
 
