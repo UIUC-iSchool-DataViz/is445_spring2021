@@ -11,18 +11,32 @@ var margin = {top: 20, right: 20, bottom: 70, left: 40},
 // this class name matches with the call in the index.idyll file
 class HistogramCustomD3Component extends D3Component {
     
-  initialize(node, props) { // "initialize" sets up initial canvas
+    initialize(node, props) { // "initialize" sets up initial canvas
+
+	// Parse the date / time
+	var parseDate = d3.isoParse;
+
+	var x = d3.scaleBand().rangeRound([0, width], .05).padding(0.1);
+
+	var y = d3.scaleLinear().range([height, 0]);
+
+	var xAxis = d3.axisBottom()
+	    .scale(x)
+	    .tickFormat(d3.timeFormat("%b"));
+
+	var yAxis = d3.axisLeft()
+	    .scale(y)
+	    .ticks(10);
+	
     const svg = (this.svg = d3.select(node).append('svg')); // think: "div" in vega-lite
     svg
-      .attr('viewBox', `0 0 ${size} ${size}`) // draw a certain sized canvas
-      .style('width', '100%') // fills whatever sized canvas to 100% the width
-      .style('height', 'auto'); // fills height based on defaults
+	    .attr("width", width + margin.left + margin.right)
+	    .attr("height", height + margin.top + margin.bottom)
+	    .append("g")
+	    .attr("transform",
+		  "translate(" + margin.left + "," + margin.top + ")");
 
-    svg
-      .append('circle') // on top of base canvas, draw a circle
-      .attr('r', 20) // radius
-      .attr('cx', Math.random() * size) // randomly selecting an x (center of circle)
-      .attr('cy', Math.random() * size); // randomly selecting a y (center)
+
   }
 
   //update(props, oldProps) { // this "update" function is needed to change the plot
