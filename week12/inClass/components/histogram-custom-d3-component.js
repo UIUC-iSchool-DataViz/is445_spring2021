@@ -21,14 +21,14 @@ class HistogramCustomD3Component extends D3Component {
       .attr('cy', Math.random() * size); // randomly selecting a y (center)
   }
 
-  update(props, oldProps) { // this "update" function is needed to change the plot
-    this.svg // selecting the "current" svg drawing
-      .selectAll('circle') // of the drawing, pick out the circle element
-      .transition() // transition between states
-      .duration(750) // 750 milliseconds between old and new states
-      .attr('cx', Math.random() * size) // update the x attribute of circle randomly
-      .attr('cy', Math.random() * size); // update the y attribute of circle randomly
-  }
+  //update(props, oldProps) { // this "update" function is needed to change the plot
+  //  this.svg // selecting the "current" svg drawing
+  //    .selectAll('circle') // of the drawing, pick out the circle element
+  //    .transition() // transition between states
+  //    .duration(750) // 750 milliseconds between old and new states
+  //    .attr('cx', Math.random() * size) // update the x attribute of circle randomly
+  //    .attr('cy', Math.random() * size); // update the y attribute of circle randomly
+  //}
 }
 
 module.exports = HistogramCustomD3Component; // this name is the same as the
