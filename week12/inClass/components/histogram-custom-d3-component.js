@@ -45,7 +45,8 @@ class HistogramCustomD3Component extends D3Component {
 	    // practice investigating data:
 	    console.log(Object.keys(data)); // what attributes in our dataset
 	    console.log(data.columns); // from Object.keys(data) --> columns
-	    console.log(data[0]['date']); // from columns -> data['date']
+	    console.log(data[0]); // from Object.keys(data) -> row numbers
+	    //console.log(data[0]['date']); // from columns -> data['date']
 
 	    
 	    // for each row in data, do something with the date
