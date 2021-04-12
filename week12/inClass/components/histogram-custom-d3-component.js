@@ -74,7 +74,7 @@ class HistogramCustomD3Component extends D3Component {
 		.data(data)
 		.enter().append("rect")
 	    // .style("fill", function(d){ return d.value < d.target ? '#EF5F67': '#3FC974'})
-	        .attr("fill", '#EF5F67')
+	        .attr("fill", '#3FC974')
 		.attr("x", function(d) { return x(d.date); })
 		.attr("width", x.bandwidth())
 		.attr("y", function(d) { return y(d.value); })
