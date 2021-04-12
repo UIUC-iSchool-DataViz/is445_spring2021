@@ -211,3 +211,5 @@ We know that we have different vega-lite [schemes we can use](https://vega.githu
 Color by:
 [button onClick:`colorBy2 = {}`]None[/button]
 [button onClick:`colorBy2 = {field:"sex", type:"nominal", scale:{"scheme":"category20b"}`]Sex of Corgi[/button]
+
+A mystery!  Why is this not working?
