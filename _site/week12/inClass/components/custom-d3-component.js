@@ -4,6 +4,7 @@ const d3 = require('d3'); // to use the d3 functions
 
 const size = 600; // setting the base size of the canvas
 
+// this class name matches with the call in the index.idyll file
 class CustomD3Component extends D3Component {
   initialize(node, props) {
     const svg = (this.svg = d3.select(node).append('svg'));
@@ -29,4 +30,5 @@ class CustomD3Component extends D3Component {
   }
 }
 
-module.exports = CustomD3Component;
+module.exports = CustomD3Component; // this name is the same as the
+// class name and also what we call in the index.idyll file
