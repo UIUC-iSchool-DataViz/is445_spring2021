@@ -576,6 +576,8 @@ To do this:
 1. delete the updateProps function and the drawing of the circle
 1. delete the drawing of the viewer box code and replace with the example from the basic histogram
 
+# Got to around here, Week 12
+
 [HistogramCustomD3Component className:"d3-component" /]
 
 So, we see that this is close, but not 100% what we wanted -- we want also to have a larger drawing area.  We can do this by modifying the "style" of our drawing within the `style.css` file in our Idyll directory (make it something like 800px instead of 200).  **NOTE:** this changes the style for ALL graphs!
