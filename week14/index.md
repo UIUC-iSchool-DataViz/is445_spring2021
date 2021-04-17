@@ -33,7 +33,7 @@ data:
     link: http://yt-project.org/data/IsolatedGalaxy.tar.gz
 ---
 
-# Scientific Viz (& possible AVL Guest lecture)
+# Scientific Viz 
 
 We talked a little bit about publishing, networks, and scientific viz.
 

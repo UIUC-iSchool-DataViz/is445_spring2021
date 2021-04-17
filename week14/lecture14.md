@@ -2,7 +2,7 @@
 title: Lecture 14 - Scientific Visualization
 layout: lecture
 description: >-
- More about scientific visualization, guest lecture from the Advanced Visualization Lab.
+ More about scientific visualization
 date: 2020-04-26
 ---
 
