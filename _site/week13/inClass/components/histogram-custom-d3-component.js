@@ -30,14 +30,11 @@ class HistogramCustomD3Component extends D3Component {
 	    .ticks(10);
 
 	// setting up the canvas object
-	const svg = (this.svg = d3.select(node).append('svg'));
-	// drawing the background canvas
-	svg 
+	const svg = this.svg = d3.select(node).append('svg') //; // take this out!
 	      .attr("width", width + margin.left + margin.right)
 	      .attr("height", height + margin.top + margin.bottom)
 	      .append("g")
 	      .attr("transform",
-		    "translate(" + margin.left + "," + margin.top + ")");
 
 	// reading in data and plotting
 	// goal: do a bar plot with our data -- years vs. corgis born in the United States
