@@ -67,8 +67,9 @@ class HistogramCustomD3Component extends D3Component {
 
 	    // setting the range of x/y axis
 	    x.domain(data.map(function(d) { return d.date; }));
-	    y.domain([0, d3.max(data, function(d) { return d.value; })]);
-
+	    //y.domain([0, d3.max(data, function(d) { return d.value; })]);
+	    y.domain([0, 800]);
+	    
 	    // drawing the x-axis
 	    svg.append("g")
 		.attr("class", "x axis")
