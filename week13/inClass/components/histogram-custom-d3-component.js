@@ -44,10 +44,11 @@ class HistogramCustomD3Component extends D3Component {
 	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week12/corg/corgs_per_country_over_time_columns_2020.csv", function(error, data) { // note our data is called "data"
 
 	    // practice investigating data:
-	    console.log(Object.keys(data)); // what attributes in our dataset
+	    //console.log(Object.keys(data)); // what attributes in our dataset
 	    console.log(data.columns); // from Object.keys(data) --> columns
 	    console.log(data[0]); // from Object.keys(data) -> row numbers
-	    console.log(data[0]['date']); // row number + column name -> data[0]['date']
+	    //console.log(data[0]['date']); // row number + column name -> data[0]['date']
+	    console.log(data[0]['Years']); // row number + column name -> data[0]['date']
 
 	    
 	    // for each row in data, do something with the date
