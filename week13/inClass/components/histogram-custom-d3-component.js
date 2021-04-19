@@ -76,18 +76,11 @@ class HistogramCustomD3Component extends D3Component {
 		.attr("transform", "translate(0," + height + ")")
 		.call(xAxis.ticks(null).tickSize(0))
 		.selectAll("text")
-		.style("text-anchor", "end")
-		.style("font-size","6px")
-		.style("transform","rotate(-65)"); // update
+		.style("text-anchor", "middle")
+	        .style("text-anchor", "end") // updated
+	        .style("font-size", "6px") // updated
+		.attr("transform", "rotate(-65)"); // updated
 
-		//.attr("class", "x axis")
-		//.attr("transform", "translate(0," + height + ")")
-		//.call(xAxis.ticks(null).tickSize(0))
-		//.selectAll("text")
-		//.style("text-anchor", "middle")
-	        //.style("text-anchor", "end") // updated
-	        //.style("font-size", "6px") // updated
-		//.attr("transform", "rotate(-65)"); // updated
 
 	    
 	    // drawing the y-axis
