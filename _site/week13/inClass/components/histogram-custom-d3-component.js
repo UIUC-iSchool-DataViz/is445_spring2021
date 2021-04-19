@@ -51,13 +51,18 @@ class HistogramCustomD3Component extends D3Component {
 	    //console.log(data[0]['date']); // row number + column name -> data[0]['date']
 	    console.log(data[0]['Years']); // row number + column name -> data[0]['date']
 
+	    // We need to choose a country to use as "value" in the below function
+	    var countryName = 'United States';
 	    
 	    // for each row in data, do something with the date
 	    data.forEach(function(d) {
 		//d.date = parseDate(d.date);
 		d.date = parseDate(d['Years']); // replacing "date" by "Years"
 		//console.log(d.date); // like print in Python
-		d.value = +d.value;
+		//d.value = +d.value;
+		d.value = d[countryName];
+		console.log(d.date);
+		console.log(d.value);
 	    });
 
 	    // setting the range of x/y axis
