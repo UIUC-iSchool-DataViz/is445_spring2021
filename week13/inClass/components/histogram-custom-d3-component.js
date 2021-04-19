@@ -22,7 +22,6 @@ class HistogramCustomD3Component extends D3Component {
 
 	var xAxis = d3.axisBottom()
 	    .scale(x)
-	    .ticks(20)
 	    .tickFormat(d3.timeFormat("%Y")); // formatting in Years -- YYYY
 	    //.tickFormat(d3.timeFormat("%b")); // shorthand months
 
