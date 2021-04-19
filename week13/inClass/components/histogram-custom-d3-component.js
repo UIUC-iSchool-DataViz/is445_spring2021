@@ -57,7 +57,7 @@ class HistogramCustomD3Component extends D3Component {
 	    // for each row in data, do something with the date
 	    data.forEach(function(d) {
 		d.date = parseDate(d.date);
-		d.date = parseDate(d['Years']); // replacing "date" by "Years"
+		//d.date = parseDate(d['Years']); // replacing "date" by "Years"
 		//console.log(d.date); // like print in Python
 		d.value = +d.value;
 		//d.value = d[countryName];
