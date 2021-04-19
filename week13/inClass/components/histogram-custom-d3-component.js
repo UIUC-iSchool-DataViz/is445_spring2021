@@ -99,6 +99,12 @@ class HistogramCustomD3Component extends D3Component {
 		.attr("width", x.bandwidth())
 		.attr("y", function(d) { return y(d.value); })
 		.attr("height", function(d) { return height - y(d.value); });
+
+	    // title text
+	    svg.append("text")
+		.attr("x", (width/2))
+		.attr("y", 10-(margin.top/2))
+		.text(countryName);
 	});
 
   }
