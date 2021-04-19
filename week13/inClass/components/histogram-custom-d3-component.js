@@ -78,8 +78,6 @@ class HistogramCustomD3Component extends D3Component {
 	        .style("text-anchor", "end") // updated
 	        .style("font-size", "6px") // updated
 		.attr("transform", "rotate(-65)"); // updated
-
-
 	    
 	    // drawing the y-axis
 	    svg.append("g")
