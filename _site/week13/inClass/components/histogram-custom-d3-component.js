@@ -61,8 +61,8 @@ class HistogramCustomD3Component extends D3Component {
 		//console.log(d.date); // like print in Python
 		//d.value = +d.value;
 		d.value = d[countryName];
-		console.log(d.date);
-		console.log(d.value);
+		//console.log(d.date);
+		//console.log(d.value);
 	    });
 
 	    // setting the range of x/y axis
