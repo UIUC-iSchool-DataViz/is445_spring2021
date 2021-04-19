@@ -14,7 +14,7 @@ class HistogramCustomD3Component extends D3Component {
     initialize(node, props) { // "initialize" sets up initial canvas
 
 	// Parse the date / time
-	var parseDate = d3.isoParse;
+	var parseDate = d3.isoParse
 
 	var x = d3.scaleBand().rangeRound([0, width], .05).padding(0.1);
 
