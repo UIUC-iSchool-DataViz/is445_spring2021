@@ -40,7 +40,8 @@ class HistogramCustomD3Component extends D3Component {
 
 	// reading in data and plotting
 	// goal: do a bar plot with our data -- years vs. corgis born in the United States
-	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week14/bar-data.csv", function(error, data) { // note our data is called "data"
+	//d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week14/bar-data.csv", function(error, data) { // note our data is called "data"
+	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week12/corg/corgs_per_country_over_time_columns_2020.csv", function(error, data) { // note our data is called "data"
 
 	    // practice investigating data:
 	    console.log(Object.keys(data)); // what attributes in our dataset
@@ -81,25 +82,11 @@ class HistogramCustomD3Component extends D3Component {
 	    svg.selectAll("bar")
 		.data(data)
 		.enter().append("rect")
-	    // .style("fill", function(d){ return d.value < d.target ? '#EF5F67': '#3FC974'})
 	        .attr("fill", '#3FC974')
 		.attr("x", function(d) { return x(d.date); })
 		.attr("width", x.bandwidth())
 		.attr("y", function(d) { return y(d.value); })
 		.attr("height", function(d) { return height - y(d.value); });
-
-	    // drawing the dashed lines
-	    //svg.selectAll("lines")
-		//.data(data)
-		//.enter().append("line")
-		//.style("fill", 'none')
-  		//.attr("x1", function(d) { return x(d.date) + x.bandwidth()+5; })
-		//.attr("x2", function(d) { return x(d.date)-5; })
-		//.attr("y1", function(d) { return y(d.target); })
-		//.attr("y2", function(d) { return y(d.target); })
-  		//.style("stroke-dasharray", [2,2])
-  		//.style("stroke", "#000000")
-		//.style("stroke-width", 2)
 	    
 	});
 
