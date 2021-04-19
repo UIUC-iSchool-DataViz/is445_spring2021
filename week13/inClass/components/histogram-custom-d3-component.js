@@ -14,7 +14,7 @@ class HistogramCustomD3Component extends D3Component {
     initialize(node, props) { // "initialize" sets up initial canvas
 
 	// Parse the date / time
-	var parseDate = d3.isoParse
+	var parseDate = d3.isoParse;
 
 	var x = d3.scaleBand().rangeRound([0, width], .05).padding(0.1);
 
@@ -22,8 +22,8 @@ class HistogramCustomD3Component extends D3Component {
 
 	var xAxis = d3.axisBottom()
 	    .scale(x)
-	    .tickFormat(d3.timeFormat("%Y")); // formatting in Years -- YYYY
-	    //.tickFormat(d3.timeFormat("%b")); // shorthand months
+	    //.tickFormat(d3.timeFormat("%Y")); // formatting in Years -- YYYY
+	    .tickFormat(d3.timeFormat("%b")); // shorthand months
 
 	var yAxis = d3.axisLeft()
 	    .scale(y)
@@ -41,34 +41,34 @@ class HistogramCustomD3Component extends D3Component {
 
 	// reading in data and plotting
 	// goal: do a bar plot with our data -- years vs. corgis born in the United States
-	//d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week14/bar-data.csv", function(error, data) { // note our data is called "data"
-	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week12/corg/corgs_per_country_over_time_columns_2020.csv", function(error, data) { // note our data is called "data"
+	d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week14/bar-data.csv", function(error, data) { // note our data is called "data"
+	//d3.csv("https://raw.githubusercontent.com/UIUC-iSchool-DataViz/spring2020/master/week12/corg/corgs_per_country_over_time_columns_2020.csv", function(error, data) { // note our data is called "data"
 
 	    // practice investigating data:
 	    //console.log(Object.keys(data)); // what attributes in our dataset
 	    console.log(data.columns); // from Object.keys(data) --> columns
 	    console.log(data[0]); // from Object.keys(data) -> row numbers
 	    //console.log(data[0]['date']); // row number + column name -> data[0]['date']
-	    console.log(data[0]['Years']); // row number + column name -> data[0]['date']
+	    //console.log(data[0]['Years']); // row number + column name -> data[0]['date']
 
 	    // We need to choose a country to use as "value" in the below function
 	    var countryName = 'United States';
 	    
 	    // for each row in data, do something with the date
 	    data.forEach(function(d) {
-		//d.date = parseDate(d.date);
+		d.date = parseDate(d.date);
 		d.date = parseDate(d['Years']); // replacing "date" by "Years"
 		//console.log(d.date); // like print in Python
-		//d.value = +d.value;
-		d.value = d[countryName];
+		d.value = +d.value;
+		//d.value = d[countryName];
 		//console.log(d.date);
 		//console.log(d.value);
 	    });
 
 	    // setting the range of x/y axis
 	    x.domain(data.map(function(d) { return d.date; }));
-	    //y.domain([0, d3.max(data, function(d) { return d.value; })]);
-	    y.domain([0, 800]); // playing with axis
+	    y.domain([0, d3.max(data, function(d) { return d.value; })]);
+	    //y.domain([0, 800]); // playing with axis
 	    
 	    // drawing the x-axis
 	    svg.append("g")
