@@ -5,7 +5,7 @@ const d3 = require('d3'); // to use the d3 functions
 // const size = 500; // setting the base size of the canvas
 
 var margin = {top: 20, right: 20, bottom: 70, left: 40},
-    width = 1000 - margin.left - margin.right,
+    width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom; // note: right now, width/height are fixed?
 
 // this class name matches with the call in the index.idyll file
