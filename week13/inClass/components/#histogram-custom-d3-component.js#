@@ -5,7 +5,7 @@ const d3 = require('d3'); // to use the d3 functions
 // const size = 500; // setting the base size of the canvas
 
 var margin = {top: 20, right: 20, bottom: 70, left: 40},
-    width = 1000 - margin.left - margin.right,
+    width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom; // note: right now, width/height are fixed?
 
 // this class name matches with the call in the index.idyll file
@@ -30,14 +30,12 @@ class HistogramCustomD3Component extends D3Component {
 	    .ticks(10);
 
 	// setting up the canvas object
-	const svg = (this.svg = d3.select(node).append('svg'));
-	// drawing the background canvas
-	svg 
-	    .attr("width", width + margin.left + margin.right)
-	    .attr("height", height + margin.top + margin.bottom)
-	    .append("g")
-	    .attr("transform",
-		  "translate(" + margin.left + "," + margin.top + ")");
+	const svg = this.svg = d3.select(node).append('svg') //; // take this out!
+	      .attr("width", width + margin.left + margin.right)
+	      .attr("height", height + margin.top + margin.bottom)
+	      .append("g")
+	      .attr("transform",
+		    "translate(" + margin.left + "," + margin.top + ")");
 
 	// reading in data and plotting
 	// goal: do a bar plot with our data -- years vs. corgis born in the United States
@@ -49,22 +47,27 @@ class HistogramCustomD3Component extends D3Component {
 	    console.log(data.columns); // from Object.keys(data) --> columns
 	    console.log(data[0]); // from Object.keys(data) -> row numbers
 	    //console.log(data[0]['date']); // row number + column name -> data[0]['date']
-	    console.log(data[0]['Years']); // row number + column name -> data[0]['date']
+	    //console.log(data[0]['Years']); // row number + column name -> data[0]['date']
 
-	    // We need to choose a 
+	    // We need to choose a country to use as "value" in the below function
+	    var countryName = 'United States';
 	    
 	    // for each row in data, do something with the date
 	    data.forEach(function(d) {
 		//d.date = parseDate(d.date);
 		d.date = parseDate(d['Years']); // replacing "date" by "Years"
 		//console.log(d.date); // like print in Python
-		d.value = +d.value;
+		//d.value = +d.value;
+		d.value = d[countryName];
+		//console.log(d.date);
+		//console.log(d.value);
 	    });
 
 	    // setting the range of x/y axis
 	    x.domain(data.map(function(d) { return d.date; }));
-	    y.domain([0, d3.max(data, function(d) { return d.value; })]);
-
+	    //y.domain([0, d3.max(data, function(d) { return d.value; })]);
+	    y.domain([0, 800]); // playing with axis
+	    
 	    // drawing the x-axis
 	    svg.append("g")
 		.attr("class", "x axis")
@@ -72,7 +75,10 @@ class HistogramCustomD3Component extends D3Component {
 		.call(xAxis.ticks(null).tickSize(0))
 		.selectAll("text")
 		.style("text-anchor", "middle")
-
+	        .style("text-anchor", "end") // updated
+	        .style("font-size", "6px") // updated
+		.attr("transform", "rotate(-65)"); // updated
+	    
 	    // drawing the y-axis
 	    svg.append("g")
 		.attr("class", "y axis")
@@ -91,7 +97,12 @@ class HistogramCustomD3Component extends D3Component {
 		.attr("width", x.bandwidth())
 		.attr("y", function(d) { return y(d.value); })
 		.attr("height", function(d) { return height - y(d.value); });
-	    
+
+	    // title text
+	    svg.append("text")
+		.attr("x", (width/2))
+		.attr("y", 10-(margin.top/2))
+		.text(countryName);
 	});
 
   }
