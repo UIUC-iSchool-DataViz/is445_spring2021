@@ -315,11 +315,13 @@ We can also "plug in" [D3.js](https://d3js.org/) plots in Idyll.
 
 We can start from one of the custom D3 components that "came with" our default Article layout in Idyll.
 
-[var name:"state" value:0 /]
-[CustomD3Component className:"d3-component" state:state /]
-[button onClick:`state++`]
-  Click Me.
-[/button]
+// [var name:"state" value:0 /]
+// [CustomD3Component className:"d3-component" state:state /]
+// [button onClick:`state++`]
+//  Click Me.
+//  [/button]
+
+
 
 Plan of attack:
 1. Remake a plot that we know a bit about (bar chart of births over time)
@@ -341,6 +343,7 @@ Steps we are going to take to get a workable example:
 // [/button]
 
 // taking out interactivity (for now!)
+
 // [HistogramCustomD3Component className:"d3-component" /]
 
 Steps to modify for our data:
