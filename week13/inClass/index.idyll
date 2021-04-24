@@ -341,7 +341,7 @@ Steps we are going to take to get a workable example:
 // [/button]
 
 // taking out interactivity (for now!)
-[HistogramCustomD3Component className:"d3-component" /]
+// [HistogramCustomD3Component className:"d3-component" /]
 
 Steps to modify for our data:
 1. Now that we have the original example working, let's start modifying things for our dataset.
