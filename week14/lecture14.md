@@ -6,18 +6,7 @@ description: >-
 date: 2020-04-26
 ---
 
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 14
-
----
-
-## Updates on Part 2 Grading
+## Shifted Final Project Due dates
 
 See Moodle Announcement.
 
