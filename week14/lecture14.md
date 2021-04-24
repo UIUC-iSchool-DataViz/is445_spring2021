@@ -24,16 +24,6 @@ we'll circle back to Python to do some sci-viz & use yt, as motivated by last we
 
 ---
 
-## Guest Lecture!
-
-AVL's Kalina Borkiewicz
-
-https://publish.illinois.edu/kalina/about/
-
----
-
----
-
 ## Information Visualization
 
 So far: Spatial encoding is chosen by the designer
