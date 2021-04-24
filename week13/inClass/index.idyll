@@ -59,7 +59,6 @@ Note: this is much like HTML coding:
 [/p]
 [/div]
 
-
 ## Idyll's built-in components
 
 We'll play with a few of Idyll's [built-in components](https://idyll-lang.org/docs/components).
@@ -192,6 +191,7 @@ Color by:
 [button onClick:`colorBy = {}`]None[/button]
 [button onClick:`colorBy = {field:"sex", type:"nominal"}`]Sex of Corgi[/button]
 
+
 We know that we have different vega-lite [schemes we can use](https://vega.github.io/vega-lite/docs/scale.html#scheme). Let's try the same plot with a different color scheme:
 
 [var name:"colorBy2" value:`{}` /]
@@ -210,9 +210,7 @@ We know that we have different vega-lite [schemes we can use](https://vega.githu
 
 Color by:
 [button onClick:`colorBy2 = {}`]None[/button]
-[button onClick:`colorBy2 = {field:"sex", type:"nominal", scale:{"scheme":"category10"}`]Sex of Corgi[/button]
-
-A mystery!  Why is this not working?
+[button onClick:`colorBy2 = {field:"sex", type:"nominal", scale:{"scheme":"category10"}}`]Sex of Corgi[/button]
 
 ## Binning and aggregating data -- histograms
 
@@ -236,10 +234,6 @@ This will basically be things that we already did before in Iodide!
 
 [button onClick: `colorBy3 = {}`] None [/button]
 [button onClick: `colorBy3 = {field:'sex', type:'nominal', scale:{"scheme":"category20"}}`]Sex of Corgi[/button]
-
-// Only half way fixed!
-
-// [button onClick: `colorBy3 = {field:'sex', type:'nominal'}`]Sex of Corgi[/button]
 
 Note: a little harder to use the vega-editor to debug, but not impossible.
 
@@ -315,13 +309,11 @@ We can also "plug in" [D3.js](https://d3js.org/) plots in Idyll.
 
 We can start from one of the custom D3 components that "came with" our default Article layout in Idyll.
 
-// [var name:"state" value:0 /]
-// [CustomD3Component className:"d3-component" state:state /]
-// [button onClick:`state++`]
-//  Click Me.
-//  [/button]
-
-
+[var name:"state" value:0 /]
+[CustomD3Component className:"d3-component" state:state /]
+[button onClick:`state++`]
+  Click Me.
+[/button]
 
 Plan of attack:
 1. Remake a plot that we know a bit about (bar chart of births over time)
@@ -344,7 +336,7 @@ Steps we are going to take to get a workable example:
 
 // taking out interactivity (for now!)
 
-// [HistogramCustomD3Component className:"d3-component" /]
+[HistogramCustomD3Component className:"d3-component" /]
 
 Steps to modify for our data:
 1. Now that we have the original example working, let's start modifying things for our dataset.
