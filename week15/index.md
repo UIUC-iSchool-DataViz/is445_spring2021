@@ -1,7 +1,7 @@
 ---
 layout: week
 visible: true
-icon: undraw_medical_research_qg4d.svg
+icon: undraw_nakamoto_2iv6.svg
 notitle: true
 examples:
   - filename: prep_notebook_wordcloud_part1.ipynb
