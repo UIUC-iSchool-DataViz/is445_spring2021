@@ -6,16 +6,6 @@ description: >-
 date: 2020-05-03
 ---
 
-<!-- .slide: class="titleslide" -->
-
-# Data Visualization
-<div style="height: 6.0em;"></div>
-
-## Jill P. Naiman
-## Lecture 15
-
----
-
 <br>
 <br>
 <br>
@@ -33,21 +23,27 @@ Look at all the stuff we covered!
 
 Today we'll cover our last topics -- networks and word clouds
 
-We'll really focus on word clouds in the codding and if we have time we'll get into networks, but 
+We'll really focus on word clouds in the coding and if we have time we'll get into networks, but 
 we'll focus on networks in the lecture portion
+
+If we have time, we'll circle back to sciviz topics
 
 ---
 
 ## Notes on Final, Part 3
 
 Due dates:
- 1. First draft of Part 3 -- due today, will get feedback from Diptendra & I
+ 1. First draft of Part 3 -- due May 10th, will get feedback course participants
  1. Post your link in the Moodle forum to get feedback from classmates
- 1. Provide feedback for 3 randomly assigned classmates -- due Dec 18th
- 1. Final chance to resubmit your Part 3 -- due Dec 19th (original Part 3 submission link)
+ 1. Provide feedback for 3 randomly assigned classmates -- due May 15th
+ 1. Final chance to resubmit your Part 3 -- due May 17th (placeholder submission link)
+ 
+**Please be aware these are hard deadlines**
  
 notes:
 go to pages!!
+
+because we have to get grades in by a certain time, these due dates are hard ones -- no extensions.
 
 
 ---
